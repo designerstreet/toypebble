@@ -1,0 +1,24 @@
+
+/* src/Components/MyCard.css */
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 200px; Adjust based on your requirements */
+    padding-top: 15px;
+  }
+  
+  .card-img-center {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  
+  .cards{
+    /* box-shadow: 0 4px 4px -4px #EDDB37; */
+    border-bottom: 8px solid #EDDB37 !important;
+    box-shadow: 0 4px 4px -2px rgba(237, 219, 55, 0.75), /* Bottom shadow */
+    0 -4px 4px -2px rgba(0, 0, 0, 0.2), /* Top shadow */
+    -4px 0 4px -2px rgba(0, 0, 0, 0.2), /* Left shadow */
+    4px 0 4px -2px rgba(0, 0, 0, 0.2); /* Right shadow */;
+  }
