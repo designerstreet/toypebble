@@ -59,6 +59,64 @@ import Set12Image1 from '../assets2/A/12/Screenshot 2024-06-24 181451.png';
 import Set12Image3 from '../assets2/A/12/Major.jpeg';
 import Set12Image4 from '../assets2/A/12/Book.jpeg';
 import Set12Image5 from '../assets2/A/12/Learning.jpeg';
+import Set13Image1 from '../assets2/B/1/Screenshot 2024-06-25 153229.png';
+import Set13Image2 from '../assets2/B/1/Minor.jpeg';
+import Set13Image3 from '../assets2/B/1/Major.jpeg';
+import Set13Image4 from '../assets2/B/1/Book.jpeg';
+import Set13Image5 from '../assets2/B/1/Learning.jpeg';
+import Set14Image1 from '../assets2/B/2/Screenshot 2024-06-25 153250.png';
+import Set14Image2 from '../assets2/B/2/Minor.webp';
+import Set14Image3 from '../assets2/B/2/Major.jpeg';
+import Set14Image4 from '../assets2/B/2/Book.jpeg';
+import Set14Image5 from '../assets2/B/2/Learning.jpeg';
+import Set15Image1 from '../assets2/B/3/Screenshot 2024-06-25 153339.png';
+import Set15Image2 from '../assets2/B/3/Minor.jpeg';
+import Set15Image4 from '../assets2/B/3/Book.jpeg';
+import Set15Image5 from '../assets2/B/3/Learning.jpeg';
+import Set16Image1 from '../assets2/B/4/Screenshot 2024-06-25 153426.png';
+import Set16Image2 from '../assets2/B/4/Minor.jpeg';
+import Set16Image3 from '../assets2/B/4/Major.jpeg';
+import Set16Image4 from '../assets2/B/4/Book.jpeg';
+import Set16Image5 from '../assets2/B/4/Learning.jpeg';
+import Set17Image1 from '../assets2/B/5/Screenshot 2024-06-25 163108.png';
+import Set17Image2 from '../assets2/B/5/Minor.jpeg';
+import Set17Image3 from '../assets2/B/5/Major.jpeg';
+import Set17Image4 from '../assets2/B/5/Book.jpeg';
+import Set17Image5 from '../assets2/B/5/Learning.jpeg';
+import Set18Image1 from '../assets2/B/6/Screenshot 2024-06-25 163138.png';
+import Set18Image2 from '../assets2/B/6/Minor.jpg';
+import Set18Image3 from '../assets2/B/6/Major.jpeg';
+import Set18Image4 from '../assets2/B/6/Book.jpeg';
+import Set18Image5 from '../assets2/B/6/Learning.jpeg';
+import Set19Image1 from '../assets2/B/7/Screenshot 2024-06-25 163300.png';
+import Set19Image2 from '../assets2/B/7/Minor.jpg';
+import Set19Image3 from '../assets2/B/7/Major.jpeg';
+import Set19Image5 from '../assets2/B/7/learning.jpeg';
+import Set20Image1 from '../assets2/B/8/Screenshot 2024-06-25 163204.png';
+import Set20Image2 from '../assets2/B/8/Minor.jpg';
+import Set20Image3 from '../assets2/B/8/major.jpeg';
+import Set20Image4 from '../assets2/B/8/Book.jpeg';
+import Set20Image5 from '../assets2/B/8/Book1.jpeg';
+import Set21Image1 from '../assets2/B/9/Screenshot 2024-06-25 164319.png';
+import Set21Image2 from '../assets2/B/9/Minor.jpeg';
+import Set21Image4 from '../assets2/B/9/Book.jpeg';
+import Set21Image5 from '../assets2/B/9/Learning.jpeg';
+import Set22Image1 from '../assets2/B/10/Screenshot 2024-06-25 164352.png';
+import Set22Image2 from '../assets2/B/10/Minor.jpeg';
+import Set22Image3 from '../assets2/B/10/Major.jpeg';
+import Set22Image4 from '../assets2/B/10/Book.jpeg';
+import Set22Image5 from '../assets2/B/10/Learning.jpeg';
+import Set23Image1 from '../assets2/B/11/Screenshot 2024-06-25 164410.png';
+import Set23Image2 from '../assets2/B/11/Minor.jpeg';
+import Set23Image3 from '../assets2/B/11/Major.jpeg';
+import Set23Image4 from '../assets2/B/11/Book.jpeg';
+import Set24Image1 from '../assets2/B/12/Screenshot 2024-06-25 164158.png';
+import Set24Image2 from '../assets2/B/12/Minor.jpeg';
+import Set24Image3 from '../assets2/B/12/Major.jpeg';
+import Set24Image4 from '../assets2/B/12/Book.jpeg';
+import Set24Image5 from '../assets2/B/12/Learning.jpeg';
+
+
 
 
 
@@ -74,18 +132,33 @@ function ToysDetail() {
   
     // Define your sets of images
     const imageSets = [
+        //Group A
       [Set1Image1, Set1Image2, Set1Image3, Set1Image4, Set1Image5], // Set 1
       [Set2Image1, Set2Image2, Set2Image3, Set2Image4, Set2Image5], // Set 2
       [Set3Image1, Set3Image2, Set3Image3, Set3Image4, Set3Image5], // Set 3
       [Set4Image1, Set4Image2, Set4Image3, Set4Image4], // Set 4
       [Set5Image1, Set5Image2, Set5Image3, Set5Image4, Set5Image5], // Set 5
-      [Set6Image1, Set6Image2, Set6Image3, Set6Image4, Set6Image5], // Set 5
-      [Set7Image1, Set7Image2, Set7Image4, Set7Image5], // Set 5
-      [Set8Image1, Set8Image2, Set8Image3, Set8Image4, Set8Image5], // Set 5
-      [Set9Image1, Set9Image2, Set9Image3, Set9Image4, Set9Image5], // Set 5
-      [Set10Image1, Set10Image2, Set10Image3, Set10Image4, Set10Image5], // Set 5
-      [Set11Image1, Set11Image2, Set11Image3, Set11Image4, Set11Image5], // Set 5
-      [Set12Image1, Set12Image3, Set12Image4, Set12Image5], // Set 5
+      [Set6Image1, Set6Image2, Set6Image3, Set6Image4, Set6Image5], // Set 6
+      [Set7Image1, Set7Image2, Set7Image4, Set7Image5], // Set 7
+      [Set8Image1, Set8Image2, Set8Image3, Set8Image4, Set8Image5], // Set 8
+      [Set9Image1, Set9Image2, Set9Image3, Set9Image4, Set9Image5], // Set 9
+      [Set10Image1, Set10Image2, Set10Image3, Set10Image4, Set10Image5], // Set 10
+      [Set11Image1, Set11Image2, Set11Image3, Set11Image4, Set11Image5], // Set 11
+      [Set12Image1, Set12Image3, Set12Image4, Set12Image5], // Set 12
+
+       //Group B
+       [Set13Image1, Set13Image2, Set13Image3, Set13Image4, Set13Image5], //Set 13
+       [Set14Image1, Set14Image2, Set14Image3, Set14Image4, Set14Image5], //Set 13
+       [Set15Image1, Set15Image2, Set15Image4, Set15Image5], //Set 13
+       [Set16Image1, Set16Image2, Set16Image3, Set16Image4, Set16Image5], //Set 13
+       [Set17Image1, Set17Image2, Set17Image3, Set17Image4, Set17Image5], //Set 13
+       [Set18Image1, Set18Image2, Set18Image3, Set18Image4, Set18Image5], //Set 13
+       [Set19Image1, Set19Image2, Set19Image3, Set19Image5], //Set 13
+       [Set20Image1, Set20Image2, Set20Image3, Set20Image4, Set20Image5], //Set 13
+       [Set21Image1, Set21Image2, Set21Image4, Set21Image5], //Set 13
+       [Set22Image1, Set22Image2, Set22Image3, Set22Image4, Set22Image5], //Set 13
+       [Set23Image1, Set23Image2, Set23Image3, Set23Image4], //Set 13
+       [Set24Image1, Set24Image2, Set24Image3, Set24Image4, Set24Image5], //Set 13
       // Add more sets as needed
     ];
   

@@ -4,7 +4,7 @@ import MyNavbar from "./Navbar";
 function Subscription() {
     return(
         <div>
-            <MyNavbar/>
+            <MyNavbar backgroundColor="rgb(200 157 157 / 35%)"/>
             <Grid container>
                 <img src="/assets/2147689857 1 (1).png" className="img-fluid" alt="" style={{width: '100%'}}/>
             </Grid>

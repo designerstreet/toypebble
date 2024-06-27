@@ -8,7 +8,7 @@ import {Grid, Link} from "@mui/material";
 function Landing() {
     return (
         <div className="landing">
-            <MyNavbar/>
+            <MyNavbar backgroundColor="rgb(246 214 144 / 59%)"/>
             <div className="banner-container">
                 <img src="/assets/banner.png" className="img-fluid" alt="Banner" />
             </div>

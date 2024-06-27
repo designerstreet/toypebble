@@ -1,6 +1,6 @@
 /* src/Components/MyNavbar.css */
 .navbar-custom {
-    background-color: #f5e6be;
+    /* background-color: #f5e6be; */
     position: absolute;
     width: 100%;
     z-index: 10; /* Ensure the navbar is above other elements */
