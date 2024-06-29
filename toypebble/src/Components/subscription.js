@@ -1,5 +1,6 @@
 import { Grid, Link } from "@mui/material";
 import MyNavbar from "./Navbar";
+import Footer from "./Footer";
 
 function Subscription() {
     return(
@@ -87,6 +88,8 @@ function Subscription() {
                     <p>Cancel Anytime: All our plans offer the flexibility to cancel your subscription whenever you want. For more detail, you can refer to our cancellation policy mentioned under terms and condition.</p>
                 </Grid>
             </Grid>
+
+            <Footer/>
             
         </div>
     )

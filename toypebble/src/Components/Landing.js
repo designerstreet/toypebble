@@ -3,6 +3,7 @@ import './Landing.css';
 import React from 'react';
 import MyCard from "./Card";
 import {Grid, Link} from "@mui/material";
+import Footer from "./Footer";
 
 
 function Landing() {
@@ -282,6 +283,8 @@ function Landing() {
                     <p style={{fontSize: '22px'}}>Our comprehensive toy sanitization process ensures that every toy is thoroughly cleaned and sanitized before it reaches your home, so you can focus on making memories with your little ones without any concerns about cleanliness or hygiene.</p>
                 </Grid>
             </Grid>
+
+            <Footer/>
             
         </div>
     )

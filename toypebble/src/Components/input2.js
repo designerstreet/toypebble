@@ -1,120 +1,258 @@
 import * as React from 'react';
-import Box from '@mui/material/Box';
-import IconButton from '@mui/material/IconButton';
-import Input from '@mui/material/Input';
-import FilledInput from '@mui/material/FilledInput';
-import OutlinedInput from '@mui/material/OutlinedInput';
-import InputLabel from '@mui/material/InputLabel';
-import InputAdornment from '@mui/material/InputAdornment';
-import FormHelperText from '@mui/material/FormHelperText';
-import FormControl from '@mui/material/FormControl';
-import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
-import Visibility from '@mui/icons-material/Visibility';
-import VisibilityOff from '@mui/icons-material/VisibilityOff';
-import { Grid } from '@mui/material';
-import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
+import { Box, IconButton, OutlinedInput, InputLabel, InputAdornment, FormControl, FormControlLabel, FormLabel, Grid, Radio, RadioGroup, Button, TextField } from '@mui/material';
+import { EmailOutlined, Cake, ChildCare, PersonOutlineOutlined, Visibility, VisibilityOff, Home, Boy, Girl } from '@mui/icons-material';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 
 export default function InputAdornments2() {
   const [showPassword, setShowPassword] = React.useState(false);
+  const [formValues, setFormValues] = React.useState({
+    parentname: '',
+    email: '',
+    password: '',
+    confirmPassword: '',
+    address: '',
+    babyname: '',
+    gender: '',
+    age: '',
+  });
+  const [error, setError] = React.useState('');
+  const navigate = useNavigate(); // Initialize useNavigate
 
   const handleClickShowPassword = () => setShowPassword((show) => !show);
+  const handleMouseDownPassword = (event) => event.preventDefault();
 
-  const handleMouseDownPassword = (event) => {
-    event.preventDefault();
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    setFormValues({ ...formValues, [name]: value });
+  };
+
+  const handleSubmit = async () => {
+    // Validate inputs
+    if (formValues.password !== formValues.confirmPassword) {
+      setError('Passwords do not match');
+      return;
+    }
+
+    try {
+      const response = await fetch('http://127.0.0.1:8080/api/auth/signup', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formValues),
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.msg || 'Signup failed');
+      }
+
+      const data = await response.json();
+      console.log('Signup successful:', data);
+      // Handle successful signup, e.g., redirect to login page
+
+       // Redirect to subscription page using navigate
+       navigate('/subscription');
+    } catch (error) {
+      setError(error.message);
+    }
   };
 
   return (
-    
     <Grid container>
-        <Grid item container xs={12} md={12}>
-            <FormControl sx={{ m: 1,}} fullWidth  variant="outlined">
-                <InputLabel htmlFor="outlined-input-with-icon-adornment">
-                Enter your name
-                </InputLabel>
-                <OutlinedInput
-                id="outlined-input-with-icon-adornment"
-                endAdornment={
-                    <InputAdornment position="end">
-                    <PersonOutlineOutlinedIcon />
-                    </InputAdornment>
-                }
-                label="Enter your name"
-               sx={{
-                backgroundColor: '#FFF',
-               }}
-                />
-            </FormControl>
-        </Grid>
-        <Grid item container xs={12} md={12}>
-            <FormControl sx={{ m: 1,}} fullWidth  variant="outlined">
-                <InputLabel htmlFor="outlined-input-with-icon-adornment">
-                Enter your email
-                </InputLabel>
-                <OutlinedInput
-                id="outlined-input-with-icon-adornment"
-                endAdornment={
-                    <InputAdornment position="end">
-                    <EmailOutlinedIcon />
-                    </InputAdornment>
-                }
-                label="Enter your email"
-               sx={{
-                backgroundColor: '#FFF',
-               }}
-                />
-            </FormControl>
-        </Grid>
-        <Grid item container xs={12} md={12}>
-            <FormControl sx={{ m: 1,}} fullWidth variant="outlined">
-            <InputLabel htmlFor="outlined-adornment-password">Set Password</InputLabel>
-            <OutlinedInput
-                id="outlined-adornment-password"
-                type={showPassword ? 'text' : 'password'}
-                endAdornment={
-                <InputAdornment position="end">
-                    <IconButton
-                    aria-label="toggle password visibility"
-                    onClick={handleClickShowPassword}
-                    onMouseDown={handleMouseDownPassword}
-                    edge="end"
-                    >
-                    {showPassword ? <VisibilityOff /> : <Visibility />}
-                    </IconButton>
-                </InputAdornment>
-                }
-                label="Set Password"
-                sx={{
-                    backgroundColor: '#FFF',
-                   }}
+      <Grid item container xs={12} md={12}>
+        <FormControl sx={{ m: 1 }} fullWidth variant="outlined">
+          <InputLabel htmlFor="outlined-input-with-icon-adornment">Enter Parent's name</InputLabel>
+          <OutlinedInput
+            id="outlined-input-with-icon-adornment"
+            name="parentname"
+            value={formValues.parentname}
+            onChange={handleInputChange}
+            endAdornment={
+              <InputAdornment position="end">
+                <PersonOutlineOutlined />
+              </InputAdornment>
+            }
+            label="Enter Parent's name"
+            sx={{ backgroundColor: '#FFF' }}
+          />
+        </FormControl>
+      </Grid>
+      <Grid item container xs={12} md={12}>
+        <FormControl sx={{ m: 1 }} fullWidth variant="outlined">
+          <InputLabel htmlFor="outlined-input-with-icon-adornment">Enter your email</InputLabel>
+          <OutlinedInput
+            id="outlined-input-with-icon-adornment"
+            name="email"
+            value={formValues.email}
+            onChange={handleInputChange}
+            endAdornment={
+              <InputAdornment position="end">
+                <EmailOutlined />
+              </InputAdornment>
+            }
+            label="Enter your email"
+            sx={{ backgroundColor: '#FFF' }}
+          />
+        </FormControl>
+      </Grid>
+      <Grid item container xs={12} md={12}>
+        <FormControl sx={{ m: 1 }} fullWidth variant="outlined">
+          <InputLabel htmlFor="outlined-input-with-icon-adornment">Enter Baby's name</InputLabel>
+          <OutlinedInput
+            id="outlined-input-with-icon-adornment"
+            name="babyname"
+            value={formValues.babyname}
+            onChange={handleInputChange}
+            endAdornment={
+              <InputAdornment position="end">
+                <ChildCare />
+              </InputAdornment>
+            }
+            label="Enter baby's name"
+            sx={{ backgroundColor: '#FFF' }}
+          />
+        </FormControl>
+      </Grid>
+      <Grid item container xs={12} md={12}>
+        <FormControl sx={{ m: 1 }} fullWidth variant="outlined">
+          <InputLabel htmlFor="outlined-input-with-icon-adornment">Enter Baby's age</InputLabel>
+          <OutlinedInput
+            id="outlined-input-with-icon-adornment"
+            name="age"
+            type="number"
+            value={formValues.age}
+            onChange={handleInputChange}
+            endAdornment={
+              <InputAdornment position="end">
+                <Cake />
+              </InputAdornment>
+            }
+            label="Enter baby's age"
+            sx={{ backgroundColor: '#FFF' }}
+          />
+        </FormControl>
+      </Grid>
+      <Grid item container xs={12} md={12} style={{ paddingLeft: '10px' }}>
+        <FormControl>
+          <FormLabel id="demo-row-radio-buttons-group-label">Gender</FormLabel>
+          <RadioGroup
+            row
+            aria-labelledby="demo-row-radio-buttons-group-label"
+            name="gender"
+            value={formValues.gender}
+            onChange={handleInputChange}
+          >
+            <FormControlLabel
+              value="female"
+              control={<Radio />}
+              label={
+                <React.Fragment>
+                  <Girl style={{ marginRight: 4 }} />
+                  Girl
+                </React.Fragment>
+              }
+              sx={{ marginRight: 5 }}
             />
-            </FormControl>
-        </Grid>
-        <Grid item container xs={12} md={12}>
-            <FormControl sx={{ m: 1,}} fullWidth variant="outlined">
-            <InputLabel htmlFor="outlined-adornment-password">Confirm Password</InputLabel>
-            <OutlinedInput
-                id="outlined-adornment-password"
-                type={showPassword ? 'text' : 'password'}
-                endAdornment={
-                <InputAdornment position="end">
-                    <IconButton
-                    aria-label="toggle password visibility"
-                    onClick={handleClickShowPassword}
-                    onMouseDown={handleMouseDownPassword}
-                    edge="end"
-                    >
-                    {showPassword ? <VisibilityOff /> : <Visibility />}
-                    </IconButton>
-                </InputAdornment>
-                }
-                label="Confirm Password"
-                sx={{
-                    backgroundColor: '#FFF',
-                   }}
+            <FormControlLabel
+              value="male"
+              control={<Radio />}
+              label={
+                <React.Fragment>
+                  <Boy style={{ marginRight: 4 }} />
+                  Boy
+                </React.Fragment>
+              }
             />
-            </FormControl>
+          </RadioGroup>
+        </FormControl>
+      </Grid>
+      <Grid item container xs={12} md={12}>
+        <FormControl sx={{ m: 1 }} fullWidth variant="outlined">
+          <InputLabel htmlFor="outlined-input-with-icon-adornment">Address</InputLabel>
+          <OutlinedInput
+            id="outlined-input-with-icon-adornment"
+            name="address"
+            multiline
+            value={formValues.address}
+            onChange={handleInputChange}
+            endAdornment={
+              <InputAdornment position="end">
+                <Home />
+              </InputAdornment>
+            }
+            label="Address"
+            sx={{ backgroundColor: '#FFF' }}
+          />
+        </FormControl>
+      </Grid>
+      <Grid item container xs={12} md={12}>
+        <FormControl sx={{ m: 1 }} fullWidth variant="outlined">
+          <InputLabel htmlFor="outlined-adornment-password">Set Password</InputLabel>
+          <OutlinedInput
+            id="outlined-adornment-password"
+            name="password"
+            type={showPassword ? 'text' : 'password'}
+            value={formValues.password}
+            onChange={handleInputChange}
+            endAdornment={
+              <InputAdornment position="end">
+                <IconButton
+                  aria-label="toggle password visibility"
+                  onClick={handleClickShowPassword}
+                  onMouseDown={handleMouseDownPassword}
+                  edge="end"
+                >
+                  {showPassword ? <VisibilityOff /> : <Visibility />}
+                </IconButton>
+              </InputAdornment>
+            }
+            label="Set Password"
+            sx={{ backgroundColor: '#FFF' }}
+          />
+        </FormControl>
+      </Grid>
+      <Grid item container xs={12} md={12}>
+        <FormControl sx={{ m: 1 }} fullWidth variant="outlined">
+          <InputLabel htmlFor="outlined-adornment-password">Confirm Password</InputLabel>
+          <OutlinedInput
+            id="outlined-adornment-password"
+            name="confirmPassword"
+            type={showPassword ? 'text' : 'password'}
+            value={formValues.confirmPassword}
+            onChange={handleInputChange}
+            endAdornment={
+              <InputAdornment position="end">
+                <IconButton
+                  aria-label="toggle password visibility"
+                  onClick={handleClickShowPassword}
+                  onMouseDown={handleMouseDownPassword}
+                  edge="end"
+                >
+                  {showPassword ? <VisibilityOff /> : <Visibility />}
+                </IconButton>
+              </InputAdornment>
+            }
+            label="Confirm Password"
+            sx={{ backgroundColor: '#FFF' }}
+          />
+        </FormControl>
+      </Grid>
+      {error && (
+        <Grid item xs={12}>
+          <Box sx={{ color: 'red', mt: 1 }}>{error}</Box>
         </Grid>
-    </Grid>      
-    
+      )}
+      <Grid item container xs={12} md={12} className='mt-3'>
+        <Button
+          variant="contained"
+          fullWidth
+          sx={{ borderRadius: '20px', backgroundColor: '#738DE7', fontSize: '20px', color: '#FFF', fontWeight: '600' }}
+          onClick={handleSubmit}
+        >
+          SIGN UP
+        </Button>
+      </Grid>
+    </Grid>
   );
 }

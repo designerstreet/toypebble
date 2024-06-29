@@ -21,7 +21,7 @@ function Login() {
                 <Grid item container md={4} className="pt-3">
                     <InputAdornments/>
                     <Grid container direction="row">
-                        <Grid item container xs={6} md={6} justifyContent="flex-start" alignItems="start">
+                        {/* <Grid item container xs={6} md={6} justifyContent="flex-start" alignItems="start">
                             <FormGroup sx={{paddingLeft: '10px'}}>
                                 <FormControlLabel control={<Checkbox />} label="Remember me" />
                             </FormGroup>
@@ -32,7 +32,7 @@ function Login() {
 
                         <Grid item container xs={12} md={12}>
                         <Button variant="contained" fullWidth sx={{borderRadius: '20px', backgroundColor: '#738DE7', fontSize: '20px', color:'#FFF', fontWeight: '600'}}>LOGIN</Button>
-                        </Grid>
+                        </Grid> */}
                         <Grid item container xs={12} md={12} justifyContent="center" alignItems="center" className="pt-3">
                             <h3 className="text-center">Don't have an account? <a href="/#/signup" style={{color: '#EBA821', textDecoration: 'none'}}>Sign Up</a></h3>
                         </Grid>

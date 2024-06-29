@@ -4,8 +4,10 @@ import Login from './Components/Login';
 import Signup from './Components/Signup';
 import Toys from './Components/Toys';
 import ToysDetail from './Components/ToysDetail';
+import PrivacyPolicy from './Components/privacyPolicy';
 import Subscription from './Components/subscription'
 import {HashRouter, Route, Routes } from 'react-router-dom';
+import TermsCondition from './Components/termsCondition';
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
       <Route path='/login' element={<Login />} />
       <Route path='/signup' element={<Signup/>} />
       <Route path='/toysdetail/:imageIndex' element={<ToysDetail />} />
+      <Route path='/privacyPolicy' element={<PrivacyPolicy />} />
+      <Route path='/termsCondition' element={<TermsCondition/>} />
       {/* other routes */}
     </Routes>
   </HashRouter>

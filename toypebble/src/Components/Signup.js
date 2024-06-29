@@ -24,14 +24,7 @@ function Signup() {
                 </Grid>
                 <Grid item container md={4} className="pt-3">
                     <InputAdornments2/>
-                    <Grid container direction="row">
-                        
-
-                        <Grid item container xs={12} md={12}>
-                        <Button variant="contained" fullWidth sx={{borderRadius: '20px', backgroundColor: '#738DE7', fontSize: '20px', color:'#FFF', fontWeight: '600'}}>SIGN UP</Button>
-                        </Grid>
-                       
-                    </Grid>
+                    
                 </Grid>
                 <Grid container item md={4} justifyContent="end" alignItems="center">
                     <img src="/assets/Group (10).png" alt="" style={{height: '270px'}} />

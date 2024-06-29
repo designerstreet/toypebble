@@ -19,6 +19,7 @@ function MyNavbar({ backgroundColor }) {
             
           </Nav>
           <Nav>
+          <Nav.Link href="/#/subscription"> Subscription</Nav.Link>
           <Nav.Link href="#deets"> My Orders</Nav.Link>
             <Nav.Link href="/#/toys"> Toys</Nav.Link>
             <Nav.Link eventKey={2} href="#memes">

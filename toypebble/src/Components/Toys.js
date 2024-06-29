@@ -4,6 +4,7 @@ import MyNavbar from "./Navbar";
 
 import './Toys.css';
 import { Link } from "react-router-dom";
+import Footer from "./Footer";
 
 function Toys() {
     
@@ -225,40 +226,49 @@ function Toys() {
                     <div className="carousel-item active">
                         <div className="card-wrapper container-sm d-flex  justify-content-around">
                             <div className="card" style={{width: '17.5rem'}}>
-                                <img src="/assets/Component 43.png" className="card-img-top" alt="..." />
+                                <Link to="/toysdetail/24">
+                                    <img src="/assets/Component 43.png" className="card-img-top" alt="..." />
+                                </Link>
                                 
                             </div>
                             <div className="card" style={{width: '17.5rem'}}>
-                                <img src="/assets/Component 44.png" className="card-img-top" alt="..." />
-                                
+                                <Link to='/toysdetail/25'>
+                                    <img src="/assets/Component 44.png" className="card-img-top" alt="..." />
+                                </Link>                                
                             </div>
                             <div className="card" style={{width: '17.5rem'}}>
-                                <img src="/assets/Component 45.png" className="card-img-top" alt="..." />
-                                
+                                <Link to='/toysdetail/26'>
+                                    <img src="/assets/Component 45.png" className="card-img-top" alt="..." />
+                                </Link>                                
                             </div>
                             <div className="card" style={{width: '17.5rem'}}>
-                                <img src="/assets/Component 46.png" className="card-img-top" alt="..." />
-                                
+                                <Link to='/toysdetail/27'>
+                                    <img src="/assets/Component 46.png" className="card-img-top" alt="..." />
+                                </Link>                                
                             </div>
                         </div>
                     </div>
                     <div className="carousel-item">
                         <div className="card-wrapper container-sm d-flex  justify-content-around">
                             <div className="card" style={{width: '17.5rem'}}>
-                                <img src="/assets/Component 47.png" className="card-img-top" alt="..." />
-                                
+                                <Link to='/toysdetail/28'>
+                                    <img src="/assets/Component 47.png" className="card-img-top" alt="..." />
+                                </Link>                               
                             </div>
                             <div className="card" style={{width: '17.5rem'}}>
-                                <img src="/assets/Component 48.png" className="card-img-top" alt="..." />
-                               
+                                <Link to='/toysdetail/29'>
+                                    <img src="/assets/Component 48.png" className="card-img-top" alt="..." />
+                                </Link>                               
                             </div>
                             <div className="card" style={{width: '17.5rem'}}>
-                                <img src="/assets/Component 49.png" className="card-img-top" alt="..." />
-                                
+                                <Link to='/toysdetail/30'>
+                                    <img src="/assets/Component 49.png" className="card-img-top" alt="..." />
+                                </Link>                                
                             </div>
                             <div className="card " style={{width: '17.5rem'}}>
-                                <img src="/assets/Component 50.png" className="card-img-top" alt="..." />
-                                
+                                <Link to='/toysdetail/31'>
+                                    <img src="/assets/Component 50.png" className="card-img-top" alt="..." />
+                                </Link>                                
                             </div>
                         </div>
                     </div>
@@ -266,20 +276,24 @@ function Toys() {
                         <div className="card-wrapper container-sm d-flex  justify-content-around">
                             
                             <div className="card" style={{width: '17.5rem'}}>
-                                <img src="/assets/Component 51.png" className="card-img-top" alt="..." />
-                                
+                                <Link to='/toysdetail/32'>
+                                    <img src="/assets/Component 51.png" className="card-img-top" alt="..." />
+                                </Link>                                
                             </div>
                             <div className="card" style={{width: '17.5rem'}}>
-                                <img src="/assets/Component 52.png" className="card-img-top" alt="..." />
-                                
+                                <Link to='/toysdetail/33'>
+                                    <img src="/assets/Component 52.png" className="card-img-top" alt="..." />
+                                </Link>                                
                             </div>
                             <div className="card" style={{width: '17.5rem'}}>
-                                <img src="/assets/Component 53.png" className="card-img-top" alt="..." />
-                                
+                                <Link to='/toysdetail/34'>
+                                    <img src="/assets/Component 53.png" className="card-img-top" alt="..." />
+                                </Link>                                
                             </div>
                             <div className="card" style={{width: '17.5rem'}}>
-                                <img src="/assets/Component 54.png" className="card-img-top" alt="..." />
-                                
+                                <Link to='/toysdetail/35'>
+                                    <img src="/assets/Component 54.png" className="card-img-top" alt="..." />
+                                </Link>                                
                             </div>
                         </div>
                     </div>
@@ -339,6 +353,27 @@ function Toys() {
                             </div>
                             <div className="card " style={{width: '17.5rem'}}>
                                 <img src="/assets/Component 75.png" className="card-img-top" alt="..." />
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="carousel-item">
+                        <div className="card-wrapper container-sm d-flex  justify-content-around">
+                            <div className="card" style={{width: '17.5rem'}}>
+                                <img src="/assets/Property 1=Frame 149.png" className="card-img-top" alt="..." />
+                                
+                            </div>
+                            <div className="card" style={{width: '17.5rem'}}>
+                                <img src="/assets/Property 1=Frame 150.png" className="card-img-top" alt="..." />
+                               
+                            </div>
+                            <div className="card" style={{width: '17.5rem'}}>
+                                <img src="/assets/Property 1=Frame 151.png" className="card-img-top" alt="..." />
+                                
+                            </div>
+                            <div className="card " style={{width: '17.5rem'}}>
+                                <img src="/assets/Property 1=Frame 152.png" className="card-img-top" alt="..." />
                                 
                             </div>
                         </div>
@@ -600,6 +635,7 @@ function Toys() {
                 </div>
             </div>
         
+            <Footer/>
     
         </div>
 
