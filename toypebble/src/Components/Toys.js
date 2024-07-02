@@ -5,6 +5,154 @@ import MyNavbar from "./Navbar";
 import './Toys.css';
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
+import Carousel from "./Carousel";
+
+const imageSets1 = [
+    [
+      { src: '/assets/Frame 110.png', link: '/toysdetail/0' },
+      { src: '/assets/Frame 111.png', link: '/toysdetail/1' },
+      { src: '/assets/Frame 112.png', link: '/toysdetail/2' },
+      { src: '/assets/Frame 113.png', link: '/toysdetail/3'  },
+    ],
+    [
+      { src: '/assets/Frame 114.png', link: '/toysdetail/4' },
+      { src: '/assets/Frame 115.png', link: '/toysdetail/5' },
+      { src: '/assets/Frame 116.png', link: '/toysdetail/6'  },
+      { src: '/assets/Frame 117.png', link: '/toysdetail/7' },
+    ],
+    [
+      { src: '/assets/Frame 118.png', link: '/toysdetail/8' },
+      { src: '/assets/Frame 119.png', link: '/toysdetail/9'  },
+      { src: '/assets/Frame 120.png', link: '/toysdetail/10'  },
+      { src: '/assets/Frame 121.png', link: '/toysdetail/11'},
+    ],
+  ];
+  
+  const imageSets2 = [
+    [
+      { src: '/assets/Component 18.png', link: '/toysdetail/12'  },
+      { src: '/assets/Component 19.png', link: '/toysdetail/13' },
+      { src: '/assets/Component 20.png', link: '/toysdetail/14' },
+      { src: '/assets/Component 21.png', link: '/toysdetail/15'  },
+    ],
+    [
+      { src: '/assets/Component 22.png', link: '/toysdetail/16' },
+      { src: '/assets/Component 23.png', link: '/toysdetail/17'  },
+      { src: '/assets/Component 24.png', link: '/toysdetail/18' },
+      { src: '/assets/Component 25.png', link: '/toysdetail/19'  },
+    ],
+    [
+      { src: '/assets/Component 26.png', link: '/toysdetail/20' },
+      { src: '/assets/Component 27.png', link: '/toysdetail/21'},
+      { src: '/assets/Component 28.png', link: '/toysdetail/22'  },
+      { src: '/assets/Component 29.png', link: '/toysdetail/23' },
+    ],
+  ];
+
+  const imageSets3 = [
+    [
+        { src: '/assets/Component 43.png', link: '/toysdetail/24' },
+        { src: '/assets/Component 44.png', link: '/toysdetail/25' },
+        { src: '/assets/Component 45.png', link: '/toysdetail/26' },
+        { src: '/assets/Component 46.png', link: '/toysdetail/27' },
+    ],
+    [
+        { src: '/assets/Component 47.png', link: '/toysdetail/28' },
+        { src: '/assets/Component 48.png', link: '/toysdetail/29' },
+        { src: '/assets/Component 49.png', link: '/toysdetail/30' },
+        { src: '/assets/Component 50.png', link: '/toysdetail/31' },
+    ],
+    [
+        { src: '/assets/Component 51.png', link: '/toysdetail/32' },
+        { src: '/assets/Component 52.png', link: '/toysdetail/33' },
+        { src: '/assets/Component 53.png', link: '/toysdetail/34' },
+        { src: '/assets/Component 54.png', link: '/toysdetail/35' },
+    ],
+];
+
+const imageSets4 = [
+    [
+        { src: '/assets/Component 68.png', link: '/toysdetail/36' },
+        { src: '/assets/Component 69.png', link: '/toysdetail/37' },
+        { src: '/assets/Component 70.png', link: '/toysdetail/38' },
+        { src: '/assets/Component 71.png', link: '/toysdetail/39' },
+    ],
+    [
+        { src: '/assets/Component 72.png', link: '/toysdetail/40' },
+        { src: '/assets/Component 73.png', link: '/toysdetail/41' },
+        { src: '/assets/Component 74.png', link: '/toysdetail/42' },
+        { src: '/assets/Component 75.png', link: '/toysdetail/43' },
+    ],
+    [
+        { src: '/assets/Component 76.png', link: '/toysdetail/44' },
+        { src: '/assets/Component 77.png', link: '/toysdetail/45' },
+        { src: '/assets/Component 78.png', link: '/toysdetail/46' },
+        { src: '/assets/Component 79.png', link: '/toysdetail/47' },
+    ],
+];
+
+const imageSets5 = [
+    [
+      { link: '/toysdetail/48', src: "/assets/Component 93.png" },
+      { link: '/toysdetail/49', src: "/assets/Component 94.png" },
+      { link: '/toysdetail/50', src: "/assets/Component 95.png" },
+      { link: '/toysdetail/51', src: "/assets/Component 96.png" }
+    ],
+    [
+      { link: '/toysdetail/52', src: "/assets/Component 97.png" },
+      { link: '/toysdetail/53', src: "/assets/Component 98.png" },
+      { link: '/toysdetail/54', src: "/assets/Component 99.png" },
+      { link: '/toysdetail/55', src: "/assets/Component 100.png" }
+    ],
+    [
+      { link: '/toysdetail/56', src: "/assets/Component 101.png" },
+      { link: '/toysdetail/57', src: "/assets/Component 102.png" },
+      { link: '/toysdetail/58', src: "/assets/Component 103.png" },
+      { link: '/toysdetail/59', src: "/assets/Component 104.png" }
+    ]
+  ];
+  
+  const imageSets6 = [
+    [
+      { link: '/toysdetail/60', src: "/assets/Component 119.png" },
+      { link: '/toysdetail/61', src: "/assets/Component 120.png" },
+      { link: '/toysdetail/62', src: "/assets/Component 121.png" },
+      { link: '/toysdetail/63', src: "/assets/Component 122.png" }
+    ],
+    [
+      { link: '/toysdetail/64', src: "/assets/Component 123.png" },
+      { link: '/toysdetail/65', src: "/assets/Component 124.png" },
+      { link: '/toysdetail/66', src: "/assets/Component 125.png" },
+      { link: '/toysdetail/67', src: "/assets/Component 126.png" }
+    ],
+    [
+      { link: '/toysdetail/68', src: "/assets/Component 127.png" },
+      { link: '/toysdetail/69', src: "/assets/Component 128.png" },
+      { link: '/toysdetail/70', src: "/assets/Component 129.png" },
+      { link: '/toysdetail/71', src: "/assets/Component 130.png" }
+    ]
+  ];
+  
+  const imageSets7 = [
+    [
+      { link: '/toysdetail/72', src: "/assets/Component 144.png" },
+      { link: '/toysdetail/73', src: "/assets/Component 145.png" },
+      { link: '/toysdetail/74', src: "/assets/Component 146.png" },
+      { link: '/toysdetail/75', src: "/assets/Component 147.png" }
+    ],
+    [
+      { link: '/toysdetail/76', src: "/assets/Component 148.png" },
+      { link: '/toysdetail/77', src: "/assets/Component 149.png" },
+      { link: '/toysdetail/78', src: "/assets/Component 150.png" },
+      { link: '/toysdetail/79', src: "/assets/Component 151.png" }
+    ],
+    [
+      { link: '/toysdetail/80', src: "/assets/Component 152.png" },
+      { link: '/toysdetail/81', src: "/assets/Component 153.png" },
+      { link: '/toysdetail/82', src: "/assets/Component 154.png" },
+      { link: '/toysdetail/83', src: "/assets/Component 155.png" }
+    ]
+  ];
 
 function Toys() {
     
@@ -33,92 +181,8 @@ function Toys() {
                 
             </Grid>
 
-            <div id="carouselExampleControls" className="carousel carousel-dark slide mt-4" data-bs-ride="carousel">
-                <div className="carousel-inner">
-                    <div className="carousel-item active">
-                        <div className="card-wrapper container-sm d-flex  justify-content-around">
-                            <div className="card" style={{width: '17.5rem'}}>
-                            <Link to="/toysdetail/0">
-                                <img src="/assets/Frame 110.png" className="card-img-top" alt="..." />
-                            </Link>                                
-                            </div>
-                            <div className="card" style={{width: '17.5rem'}}>
-                            <Link to="/toysdetail/1">
-                                <img src="/assets/Frame 111.png" className="card-img-top" alt="..." />
-                            </Link>                                
-                            </div>
-                            <div className="card" style={{width: '17.5rem'}}>
-                            <Link to="/toysdetail/2">
-                                <img src="/assets/Frame 112.png" className="card-img-top" alt="..." />
-                            </Link> 
-                                
-                            </div>
-                            <div className="card" style={{width: '17.5rem'}}>
-                            <Link to="/toysdetail/3">
-                                <img src="/assets/Frame 113.png" className="card-img-top" alt="..." />
-                            </Link>                                 
-                            </div>
-                        </div>
-                    </div>
-                    <div className="carousel-item">
-                        <div className="card-wrapper container-sm d-flex  justify-content-around">
-                            <div className="card" style={{width: '17.5rem'}}>
-                            <Link to="/toysdetail/4">
-                                <img src="/assets/Frame 114.png" className="card-img-top" alt="..." />
-                            </Link>                                 
-                            </div>
-                            <div className="card" style={{width: '17.5rem'}}>
-                            <Link to="/toysdetail/5">
-                                <img src="/assets/Frame 115.png" className="card-img-top" alt="..." />
-                            </Link>                                
-                            </div>
-                            <div className="card" style={{width: '17.5rem'}}>
-                            <Link to="/toysdetail/6">
-                                <img src="/assets/Frame 116.png" className="card-img-top" alt="..." />
-                            </Link>                                 
-                            </div>
-                            <div className="card " style={{width: '17.5rem'}}>
-                            <Link to="/toysdetail/7">
-                                <img src="/assets/Frame 117.png" className="card-img-top" alt="..." />
-                            </Link>                                 
-                            </div>
-                        </div>
-                    </div>
-                    <div className="carousel-item">
-                        <div className="card-wrapper container-sm d-flex  justify-content-around">
-                            
-                            <div className="card" style={{width: '17.5rem'}}>
-                            <Link to="/toysdetail/8">
-                                <img src="/assets/Frame 118.png" className="card-img-top" alt="..." />
-                            </Link>                                 
-                            </div>
-                            <div className="card" style={{width: '17.5rem'}}>
-                            <Link to="/toysdetail/9">
-                                <img src="/assets/Frame 119.png" className="card-img-top" alt="..." />
-                            </Link>                                 
-                            </div>
-                            <div className="card" style={{width: '17.5rem'}}>
-                            <Link to="/toysdetail/10">
-                                <img src="/assets/Frame 120.png" className="card-img-top" alt="..." />
-                            </Link>                                 
-                            </div>
-                            <div className="card" style={{width: '17.5rem'}}>
-                            <Link to="/toysdetail/11">
-                                <img src="/assets/Frame 121.png" className="card-img-top" alt="..." />
-                            </Link>                                 
-                            </div>
-                        </div>
-                    </div>
-                    <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span className="visually-hidden">Previous</span>
-                    </button>
-                    <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                        <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span className="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
+            
+             <Carousel images={imageSets1} id="1" />
 
             <Grid container  className="mt-5">
                 <Grid item container xs={12} md={12} justifyContent="center" alignItems="center">
@@ -127,92 +191,8 @@ function Toys() {
                 
             </Grid>
 
-            <div id="carouselExampleControls2" className="carousel carousel-dark slide mt-4" data-bs-ride="carousel">
-                <div className="carousel-inner">
-                    <div className="carousel-item active">
-                        <div className="card-wrapper container-sm d-flex  justify-content-around">
-                            <div className="card" style={{width: '17.5rem'}}>
-                                <Link to="/toysdetail/12">
-                                    <img src="/assets/Component 18.png" className="card-img-top" alt="..." />
-                                </Link>
-                                
-                            </div>
-                            <div className="card" style={{width: '17.5rem'}}>
-                                <Link to="/toysdetail/13">
-                                    <img src="/assets/Component 19.png" className="card-img-top" alt="..." />
-                                </Link>                                
-                            </div>
-                            <div className="card" style={{width: '17.5rem'}}>
-                                <Link to="/toysdetail/14">
-                                    <img src="/assets/Component 20.png" className="card-img-top" alt="..." />
-                                </Link>                                
-                            </div>
-                            <div className="card" style={{width: '17.5rem'}}>
-                                <Link to="/toysdetail/15">
-                                    <img src="/assets/Component 21.png" className="card-img-top" alt="..." />
-                                </Link>                                
-                            </div>
-                        </div>
-                    </div>
-                    <div className="carousel-item">
-                        <div className="card-wrapper container-sm d-flex  justify-content-around">
-                            <div className="card" style={{width: '17.5rem'}}>
-                                <Link to="/toysdetail/16">
-                                    <img src="/assets/Component 22.png" className="card-img-top" alt="..." />
-                                </Link>                                
-                            </div>
-                            <div className="card" style={{width: '17.5rem'}}>
-                                <Link to="/toysdetail/17">
-                                    <img src="/assets/Component 23.png" className="card-img-top" alt="..." />
-                                </Link>                               
-                            </div>
-                            <div className="card" style={{width: '17.5rem'}}>
-                                <Link to="/toysdetail/18">
-                                    <img src="/assets/Component 24.png" className="card-img-top" alt="..." />
-                                </Link>                                
-                            </div>
-                            <div className="card " style={{width: '17.5rem'}}>
-                                <Link to="/toysdetail/19">
-                                    <img src="/assets/Component 25.png" className="card-img-top" alt="..." />
-                                </Link>                                
-                            </div>
-                        </div>
-                    </div>
-                    <div className="carousel-item">
-                        <div className="card-wrapper container-sm d-flex  justify-content-around">
-                            
-                            <div className="card" style={{width: '17.5rem'}}>
-                                <Link to="/toysdetail/20">
-                                    <img src="/assets/Component 26.png" className="card-img-top" alt="..." />
-                                </Link>                                
-                            </div>
-                            <div className="card" style={{width: '17.5rem'}}>
-                                <Link to="/toysdetail/21">
-                                    <img src="/assets/Component 27.png" className="card-img-top" alt="..." />
-                                </Link>                                
-                            </div>
-                            <div className="card" style={{width: '17.5rem'}}>
-                                <Link to="/toysdetail/22">
-                                    <img src="/assets/Component 28.png" className="card-img-top" alt="..." />
-                                </Link>                                
-                            </div>
-                            <div className="card" style={{width: '17.5rem'}}>
-                                <Link to="/toysdetail/23">
-                                    <img src="/assets/Component 29.png" className="card-img-top" alt="..." />
-                                </Link>
-                            </div>
-                        </div>
-                    </div>
-                    <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
-                        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span className="visually-hidden">Previous</span>
-                    </button>
-                    <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
-                        <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span className="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
+            
+             <Carousel images={imageSets2} id="2" />
 
             <Grid container  className="mt-5">
                 <Grid item container xs={12} md={12} justifyContent="center" alignItems="center">
@@ -221,92 +201,8 @@ function Toys() {
                 
             </Grid>
 
-            <div id="carouselExampleControls3" className="carousel carousel-dark slide mt-4" data-bs-ride="carousel">
-                <div className="carousel-inner">
-                    <div className="carousel-item active">
-                        <div className="card-wrapper container-sm d-flex  justify-content-around">
-                            <div className="card" style={{width: '17.5rem'}}>
-                                <Link to="/toysdetail/24">
-                                    <img src="/assets/Component 43.png" className="card-img-top" alt="..." />
-                                </Link>
-                                
-                            </div>
-                            <div className="card" style={{width: '17.5rem'}}>
-                                <Link to='/toysdetail/25'>
-                                    <img src="/assets/Component 44.png" className="card-img-top" alt="..." />
-                                </Link>                                
-                            </div>
-                            <div className="card" style={{width: '17.5rem'}}>
-                                <Link to='/toysdetail/26'>
-                                    <img src="/assets/Component 45.png" className="card-img-top" alt="..." />
-                                </Link>                                
-                            </div>
-                            <div className="card" style={{width: '17.5rem'}}>
-                                <Link to='/toysdetail/27'>
-                                    <img src="/assets/Component 46.png" className="card-img-top" alt="..." />
-                                </Link>                                
-                            </div>
-                        </div>
-                    </div>
-                    <div className="carousel-item">
-                        <div className="card-wrapper container-sm d-flex  justify-content-around">
-                            <div className="card" style={{width: '17.5rem'}}>
-                                <Link to='/toysdetail/28'>
-                                    <img src="/assets/Component 47.png" className="card-img-top" alt="..." />
-                                </Link>                               
-                            </div>
-                            <div className="card" style={{width: '17.5rem'}}>
-                                <Link to='/toysdetail/29'>
-                                    <img src="/assets/Component 48.png" className="card-img-top" alt="..." />
-                                </Link>                               
-                            </div>
-                            <div className="card" style={{width: '17.5rem'}}>
-                                <Link to='/toysdetail/30'>
-                                    <img src="/assets/Component 49.png" className="card-img-top" alt="..." />
-                                </Link>                                
-                            </div>
-                            <div className="card " style={{width: '17.5rem'}}>
-                                <Link to='/toysdetail/31'>
-                                    <img src="/assets/Component 50.png" className="card-img-top" alt="..." />
-                                </Link>                                
-                            </div>
-                        </div>
-                    </div>
-                    <div className="carousel-item">
-                        <div className="card-wrapper container-sm d-flex  justify-content-around">
-                            
-                            <div className="card" style={{width: '17.5rem'}}>
-                                <Link to='/toysdetail/32'>
-                                    <img src="/assets/Component 51.png" className="card-img-top" alt="..." />
-                                </Link>                                
-                            </div>
-                            <div className="card" style={{width: '17.5rem'}}>
-                                <Link to='/toysdetail/33'>
-                                    <img src="/assets/Component 52.png" className="card-img-top" alt="..." />
-                                </Link>                                
-                            </div>
-                            <div className="card" style={{width: '17.5rem'}}>
-                                <Link to='/toysdetail/34'>
-                                    <img src="/assets/Component 53.png" className="card-img-top" alt="..." />
-                                </Link>                                
-                            </div>
-                            <div className="card" style={{width: '17.5rem'}}>
-                                <Link to='/toysdetail/35'>
-                                    <img src="/assets/Component 54.png" className="card-img-top" alt="..." />
-                                </Link>                                
-                            </div>
-                        </div>
-                    </div>
-                    <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="prev">
-                        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span className="visually-hidden">Previous</span>
-                    </button>
-                    <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="next">
-                        <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span className="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
+            
+            <Carousel images={imageSets3} id="3" />
 
             <Grid container  className="mt-5">
                 <Grid item container xs={12} md={12} justifyContent="center" alignItems="center">
@@ -315,80 +211,7 @@ function Toys() {
                 
             </Grid>
 
-            <div id="carouselExampleControls4" className="carousel carousel-dark slide mt-4" data-bs-ride="carousel">
-                <div className="carousel-inner">
-                    <div className="carousel-item active">
-                        <div className="card-wrapper container-sm d-flex  justify-content-around">
-                            <div className="card" style={{width: '17.5rem'}}>
-                                <img src="/assets/Component 68.png" className="card-img-top" alt="..." />
-                                
-                            </div>
-                            <div className="card" style={{width: '17.5rem'}}>
-                                <img src="/assets/Component 69.png" className="card-img-top" alt="..." />
-                                
-                            </div>
-                            <div className="card" style={{width: '17.5rem'}}>
-                                <img src="/assets/Component 70.png" className="card-img-top" alt="..." />
-                                
-                            </div>
-                            <div className="card" style={{width: '17.5rem'}}>
-                                <img src="/assets/Component 71.png" className="card-img-top" alt="..." />
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div className="carousel-item">
-                        <div className="card-wrapper container-sm d-flex  justify-content-around">
-                            <div className="card" style={{width: '17.5rem'}}>
-                                <img src="/assets/Component 72.png" className="card-img-top" alt="..." />
-                                
-                            </div>
-                            <div className="card" style={{width: '17.5rem'}}>
-                                <img src="/assets/Component 73.png" className="card-img-top" alt="..." />
-                               
-                            </div>
-                            <div className="card" style={{width: '17.5rem'}}>
-                                <img src="/assets/Component 74.png" className="card-img-top" alt="..." />
-                                
-                            </div>
-                            <div className="card " style={{width: '17.5rem'}}>
-                                <img src="/assets/Component 75.png" className="card-img-top" alt="..." />
-                                
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="carousel-item">
-                        <div className="card-wrapper container-sm d-flex  justify-content-around">
-                            <div className="card" style={{width: '17.5rem'}}>
-                                <img src="/assets/Property 1=Frame 149.png" className="card-img-top" alt="..." />
-                                
-                            </div>
-                            <div className="card" style={{width: '17.5rem'}}>
-                                <img src="/assets/Property 1=Frame 150.png" className="card-img-top" alt="..." />
-                               
-                            </div>
-                            <div className="card" style={{width: '17.5rem'}}>
-                                <img src="/assets/Property 1=Frame 151.png" className="card-img-top" alt="..." />
-                                
-                            </div>
-                            <div className="card " style={{width: '17.5rem'}}>
-                                <img src="/assets/Property 1=Frame 152.png" className="card-img-top" alt="..." />
-                                
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls4" data-bs-slide="prev">
-                        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span className="visually-hidden">Previous</span>
-                    </button>
-                    <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls4" data-bs-slide="next">
-                        <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span className="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
+            <Carousel images={imageSets4} id="4" />
 
             <Grid container  className="mt-5">
                 <Grid item container xs={12} md={12} justifyContent="center" alignItems="center">
@@ -397,79 +220,8 @@ function Toys() {
                 
             </Grid>
 
-            <div id="carouselExampleControls5" className="carousel carousel-dark slide mt-4" data-bs-ride="carousel">
-                <div className="carousel-inner">
-                    <div className="carousel-item active">
-                        <div className="card-wrapper container-sm d-flex  justify-content-around">
-                            <div className="card" style={{width: '17.5rem'}}>
-                                <img src="/assets/Component 93.png" className="card-img-top" alt="..." />
-                                
-                            </div>
-                            <div className="card" style={{width: '17.5rem'}}>
-                                <img src="/assets/Component 94.png" className="card-img-top" alt="..." />
-                                
-                            </div>
-                            <div className="card" style={{width: '17.5rem'}}>
-                                <img src="/assets/Component 95.png" className="card-img-top" alt="..." />
-                                
-                            </div>
-                            <div className="card" style={{width: '17.5rem'}}>
-                                <img src="/assets/Component 96.png" className="card-img-top" alt="..." />
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div className="carousel-item">
-                        <div className="card-wrapper container-sm d-flex  justify-content-around">
-                            <div className="card" style={{width: '17.5rem'}}>
-                                <img src="/assets/Component 97.png" className="card-img-top" alt="..." />
-                                
-                            </div>
-                            <div className="card" style={{width: '17.5rem'}}>
-                                <img src="/assets/Component 98.png" className="card-img-top" alt="..." />
-                               
-                            </div>
-                            <div className="card" style={{width: '17.5rem'}}>
-                                <img src="/assets/Component 99.png" className="card-img-top" alt="..." />
-                                
-                            </div>
-                            <div className="card " style={{width: '17.5rem'}}>
-                                <img src="/assets/Component 100.png" className="card-img-top" alt="..." />
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div className="carousel-item">
-                        <div className="card-wrapper container-sm d-flex  justify-content-around">
-                            
-                            <div className="card" style={{width: '17.5rem'}}>
-                                <img src="/assets/Component 101.png" className="card-img-top" alt="..." />
-                                
-                            </div>
-                            <div className="card" style={{width: '17.5rem'}}>
-                                <img src="/assets/Component 102.png" className="card-img-top" alt="..." />
-                                
-                            </div>
-                            <div className="card" style={{width: '17.5rem'}}>
-                                <img src="/assets/Component 103.png" className="card-img-top" alt="..." />
-                                
-                            </div>
-                            <div className="card" style={{width: '17.5rem'}}>
-                                <img src="/assets/Component 104.png" className="card-img-top" alt="..." />
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls5" data-bs-slide="prev">
-                        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span className="visually-hidden">Previous</span>
-                    </button>
-                    <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls5" data-bs-slide="next">
-                        <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span className="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
+        
+            <Carousel images={imageSets5} id="5" />
 
 
             <Grid container  className="mt-5">
@@ -479,79 +231,8 @@ function Toys() {
                 
             </Grid>
 
-            <div id="carouselExampleControls6" className="carousel carousel-dark slide mt-4" data-bs-ride="carousel">
-                <div className="carousel-inner">
-                    <div className="carousel-item active">
-                        <div className="card-wrapper container-sm d-flex  justify-content-around">
-                            <div className="card" style={{width: '17.5rem'}}>
-                                <img src="/assets/Component 119.png" className="card-img-top" alt="..." />
-                                
-                            </div>
-                            <div className="card" style={{width: '17.5rem'}}>
-                                <img src="/assets/Component 120.png" className="card-img-top" alt="..." />
-                                
-                            </div>
-                            <div className="card" style={{width: '17.5rem'}}>
-                                <img src="/assets/Component 121.png" className="card-img-top" alt="..." />
-                                
-                            </div>
-                            <div className="card" style={{width: '17.5rem'}}>
-                                <img src="/assets/Component 122.png" className="card-img-top" alt="..." />
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div className="carousel-item">
-                        <div className="card-wrapper container-sm d-flex  justify-content-around">
-                            <div className="card" style={{width: '17.5rem'}}>
-                                <img src="/assets/Component 123.png" className="card-img-top" alt="..." />
-                                
-                            </div>
-                            <div className="card" style={{width: '17.5rem'}}>
-                                <img src="/assets/Component 124.png" className="card-img-top" alt="..." />
-                               
-                            </div>
-                            <div className="card" style={{width: '17.5rem'}}>
-                                <img src="/assets/Component 125.png" className="card-img-top" alt="..." />
-                                
-                            </div>
-                            <div className="card " style={{width: '17.5rem'}}>
-                                <img src="/assets/Component 126.png" className="card-img-top" alt="..." />
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div className="carousel-item">
-                        <div className="card-wrapper container-sm d-flex  justify-content-around">
-                            
-                            <div className="card" style={{width: '17.5rem'}}>
-                                <img src="/assets/Component 127.png" className="card-img-top" alt="..." />
-                                
-                            </div>
-                            <div className="card" style={{width: '17.5rem'}}>
-                                <img src="/assets/Component 128.png" className="card-img-top" alt="..." />
-                                
-                            </div>
-                            <div className="card" style={{width: '17.5rem'}}>
-                                <img src="/assets/Component 129.png" className="card-img-top" alt="..." />
-                                
-                            </div>
-                            <div className="card" style={{width: '17.5rem'}}>
-                                <img src="/assets/Component 130.png" className="card-img-top" alt="..." />
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls6" data-bs-slide="prev">
-                        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span className="visually-hidden">Previous</span>
-                    </button>
-                    <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls6" data-bs-slide="next">
-                        <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span className="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
+         
+            <Carousel images={imageSets6} id="6" />
 
 
             <Grid container  className="mt-5">
@@ -561,79 +242,8 @@ function Toys() {
                 
             </Grid>
 
-            <div id="carouselExampleControls7" className="carousel carousel-dark slide mt-4" data-bs-ride="carousel">
-                <div className="carousel-inner">
-                    <div className="carousel-item active">
-                        <div className="card-wrapper container-sm d-flex  justify-content-around">
-                            <div className="card" style={{width: '17.5rem'}}>
-                                <img src="/assets/Component 144.png" className="card-img-top" alt="..." />
-                                
-                            </div>
-                            <div className="card" style={{width: '17.5rem'}}>
-                                <img src="/assets/Component 145.png" className="card-img-top" alt="..." />
-                                
-                            </div>
-                            <div className="card" style={{width: '17.5rem'}}>
-                                <img src="/assets/Component 146.png" className="card-img-top" alt="..." />
-                                
-                            </div>
-                            <div className="card" style={{width: '17.5rem'}}>
-                                <img src="/assets/Component 147.png" className="card-img-top" alt="..." />
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div className="carousel-item">
-                        <div className="card-wrapper container-sm d-flex  justify-content-around">
-                            <div className="card" style={{width: '17.5rem'}}>
-                                <img src="/assets/Component 148.png" className="card-img-top" alt="..." />
-                                
-                            </div>
-                            <div className="card" style={{width: '17.5rem'}}>
-                                <img src="/assets/Component 149.png" className="card-img-top" alt="..." />
-                               
-                            </div>
-                            <div className="card" style={{width: '17.5rem'}}>
-                                <img src="/assets/Component 150.png" className="card-img-top" alt="..." />
-                                
-                            </div>
-                            <div className="card " style={{width: '17.5rem'}}>
-                                <img src="/assets/Component 151.png" className="card-img-top" alt="..." />
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div className="carousel-item">
-                        <div className="card-wrapper container-sm d-flex  justify-content-around">
-                            
-                            <div className="card" style={{width: '17.5rem'}}>
-                                <img src="/assets/Component 152.png" className="card-img-top" alt="..." />
-                                
-                            </div>
-                            <div className="card" style={{width: '17.5rem'}}>
-                                <img src="/assets/Component 153.png" className="card-img-top" alt="..." />
-                                
-                            </div>
-                            <div className="card" style={{width: '17.5rem'}}>
-                                <img src="/assets/Component 154.png" className="card-img-top" alt="..." />
-                                
-                            </div>
-                            <div className="card" style={{width: '17.5rem'}}>
-                                <img src="/assets/Component 155.png" className="card-img-top" alt="..." />
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls7" data-bs-slide="prev">
-                        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span className="visually-hidden">Previous</span>
-                    </button>
-                    <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls7" data-bs-slide="next">
-                        <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span className="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
+         
+            <Carousel images={imageSets7} id="7" />
         
             <Footer/>
     

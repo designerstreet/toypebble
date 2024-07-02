@@ -8,6 +8,8 @@ import PrivacyPolicy from './Components/privacyPolicy';
 import Subscription from './Components/subscription'
 import {HashRouter, Route, Routes } from 'react-router-dom';
 import TermsCondition from './Components/termsCondition';
+import ForgotPassword from './Components/ForgotPassword';
+import ResetPassword from './Components/ResetPassword';
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
       <Route path="/toys" element={<Toys />} />
       <Route path='/login' element={<Login />} />
       <Route path='/signup' element={<Signup/>} />
+      <Route path='/forgotPassword' element={<ForgotPassword/>} />
+      <Route path='/resetPassword' element={<ResetPassword/>} />
       <Route path='/toysdetail/:imageIndex' element={<ToysDetail />} />
       <Route path='/privacyPolicy' element={<PrivacyPolicy />} />
       <Route path='/termsCondition' element={<TermsCondition/>} />

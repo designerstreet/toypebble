@@ -105,7 +105,7 @@ export default function InputAdornments() {
           </FormGroup>
         </Grid>
         <Grid item container xs={6} md={6} justifyContent="flex-end">
-          <a href="#" style={{ paddingTop: '11px', paddingRight: '10px' }}>
+          <a href="/#/forgotPassword" style={{ paddingTop: '11px', paddingRight: '10px' }}>
             Forgot Password?
           </a>
         </Grid>
