@@ -10,6 +10,9 @@ import {HashRouter, Route, Routes } from 'react-router-dom';
 import TermsCondition from './Components/termsCondition';
 import ForgotPassword from './Components/ForgotPassword';
 import ResetPassword from './Components/ResetPassword';
+import OurStory from './Components/OurStory';
+import Contact from './Components/Contact';
+import Order from './Components/Order';
 
 function App() {
   return (
@@ -25,6 +28,9 @@ function App() {
       <Route path='/toysdetail/:imageIndex' element={<ToysDetail />} />
       <Route path='/privacyPolicy' element={<PrivacyPolicy />} />
       <Route path='/termsCondition' element={<TermsCondition/>} />
+      <Route path='/ourStory' element={<OurStory/>} />
+      <Route path='/contact' element={<Contact/>} />
+      <Route path='/myOrders' element={<Order/>} />
       {/* other routes */}
     </Routes>
   </HashRouter>

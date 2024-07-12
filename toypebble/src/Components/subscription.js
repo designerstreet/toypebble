@@ -1,6 +1,7 @@
 import { Grid, Link } from "@mui/material";
 import MyNavbar from "./Navbar";
 import Footer from "./Footer";
+import './subscription.css';
 
 function Subscription() {
     return(
@@ -8,13 +9,29 @@ function Subscription() {
             <MyNavbar backgroundColor="rgb(200 157 157 / 35%)"/>
             <Grid container>
                 <img src="/assets/2147689857 1 (1).png" className="img-fluid" alt="" style={{width: '100%'}}/>
+                <div style={{
+                position: 'absolute',
+                top: '40%',
+                left: '50%',
+                transform: 'translate(-50%, -50%)',
+                textAlign: 'center',
+                color: '#000',
+                fontSize: '80px',
+                fontWeight: '800'  ,
+                padding: '10px',
+                
+            }}>
+               <span style={{color: '#FF3300'}}>Toy</span><span style={{color: '#186CCC'}}>Pebble</span><br>
+               </br>
+               <h1 style={{color: '#000', fontSize: '80px', fontWeight: '800'}}>Subscription Plans</h1>
+            </div>
             </Grid>
             <Grid container direction="row" sx={{backgroundColor: '#FFFCB1'}}>
                 <Grid item container xs={12} md={12} justifyContent="end" alignItems="end">
                     <img src="/assets/Group (5).png" />
                 </Grid>
                 <Grid item container xs={12} md={12} justifyContent="center" alignItems="center">
-                    <h1 style={{fontSize: '5rem'}}>Welcome to <span style={{color: '#FF2424'}}>Toy</span><span style={{color: '#4F4FD2'}}>Pebble</span>!</h1>
+                    <h1 className="text-center" style={{fontSize: '5rem'}}>Welcome to <span style={{color: '#FF2424'}}>Toy</span><span style={{color: '#4F4FD2'}}>Pebble</span>!</h1>
                 </Grid>
                 <Grid item container xs={2} md={2} >
                     <img src="/assets/Screenshot 2024-06-21 110505.png" style={{height: '150px', width: '170px'}}/>
@@ -35,10 +52,10 @@ function Subscription() {
 
             <Grid container>
                 <Grid item container xs={12} md={12} justifyContent="center" alignItems="center">
-                    <div className="pt-3" style={{border: '1px solid #FFFCB1', backgroundColor: '#FFFCB1'}}>
-                        <p style={{color: '#FF2323', fontSize: '25px', fontWeight: '600', }}><img src="/assets/Line 5.png"/>Price: ₹999 + GST per month<img src="/assets/Line 5.png"/></p>
+                    <Grid className="pt-3" sx={{border: '1px solid #FFFCB1', backgroundColor: '#FFFCB1'}}>
+                        <p id="para3" style={{color: '#FF2323', fontSize: '25px', fontWeight: '600', }}><img src="/assets/Line 5.png" className="img-fluid"/>Price: ₹999 + GST per month<img src="/assets/Line 5.png" className="img-fluid"/></p>
                         <p className="text-center">Hurry! Grab this special offer before it’s gone! <br></br>Perfect for new members who want to experience the joy of ToyPebble at an unbeatable price.</p>
-                    </div>
+                    </Grid>
                 </Grid>
             </Grid>
 

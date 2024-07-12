@@ -19,14 +19,14 @@ function MyNavbar({ backgroundColor }) {
             
           </Nav>
           <Nav>
-          <Nav.Link href="/#/subscription"> Subscription</Nav.Link>
-          <Nav.Link href="/#/myOrders"> My Orders</Nav.Link>
-            <Nav.Link href="/#/toys"> Toys</Nav.Link>
-            <Nav.Link eventKey={2} href="/#/ourStory">
+          <Nav.Link href="/#/subscription" style={{color: '#000', fontWeight: '600'}}> Subscription</Nav.Link>
+          <Nav.Link href="/#/myOrders" style={{color: '#000', fontWeight: '600'}}> My Orders</Nav.Link>
+            <Nav.Link href="/#/toys" style={{color: '#000', fontWeight: '600'}}> Toys</Nav.Link>
+            <Nav.Link eventKey={2} href="/#/ourStory" style={{color: '#000', fontWeight: '600'}}>
               Our Story 
             </Nav.Link>
-            <Nav.Link href="#"> Contact</Nav.Link>
-            <Nav.Link href="/#/login" style={{ border: '1px solid #FFADAD', backgroundColor: '#FFADAD', borderRadius: '32px'}}>
+            <Nav.Link href="/#/contact" style={{color: '#000', fontWeight: '600'}}> Contact Us</Nav.Link>
+            <Nav.Link href="/#/login" style={{ border: '1px solid #FFADAD', backgroundColor: '#FFADAD', borderRadius: '32px', color: '#000', fontWeight: '600'}}>
               Login/Sign Up 
             </Nav.Link>
           </Nav>

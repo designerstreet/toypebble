@@ -11,7 +11,7 @@ function Landing() {
         <div className="landing">
             <MyNavbar backgroundColor="rgb(246 214 144 / 59%)"/>
             <div className="banner-container">
-                <img src="/assets/banner.png" className="img-fluid" alt="Banner" />
+                <img src="/assets/banner (1).png" className="img-fluid" alt="Banner" />
             </div>
 
             <div>
@@ -20,10 +20,10 @@ function Landing() {
                         <img src="/assets/8431 1.png" className="img-fluid" style={{width: '100%'}}/>
                     </div>
                     <div className="col-md-6">
-                        <h1 style={{fontFamily: 'Atma', fontSize: '50px', paddingRight: '7px', paddingTop: '15px', fontWeight: '800'}}>Are you tired of toy clutter taking over your home?</h1>
-                        <p style={{ fontFamily: 'Atma', paddingTop: '30px', fontSize: '25px', paddingRight: '170px'}}>We've been there too. As a brother and sister duo, we understand firsthand the overwhelming challenge of managing a mountain of toys, especially after welcoming a new addition to the family.</p>
-                        <p style={{ fontFamily: 'Atma', paddingTop: '30px', fontSize: '25px', paddingRight: '170px'}}>That's why we founded <span style={{color: 'red'}}>Toy</span><span style={{color: 'blue'}}>Pebble</span> Toy Rental—to make playtime easier, more affordable, and way less cluttered!</p>
-                        <div className="row" style={{border: '1px solid #B8D0FF', backgroundColor: '#B8D0FF', padding: '15px', position: 'relative', right: '130px'}}>
+                        <h1 id="head1" style={{fontFamily: 'Atma', fontSize: '50px', paddingRight: '7px', paddingTop: '15px', fontWeight: '800'}}>Are you tired of toy clutter taking over your home?</h1>
+                        <p id="para1" style={{ fontFamily: 'Atma', paddingTop: '30px', fontSize: '25px', paddingRight: '170px'}}>We've been there too. As a brother and sister duo, we understand firsthand the overwhelming challenge of managing a mountain of toys, especially after welcoming a new addition to the family.</p>
+                        <p id="para2" style={{ fontFamily: 'Atma', paddingTop: '30px', fontSize: '25px', paddingRight: '170px'}}>That's why we founded <span style={{color: 'red'}}>Toy</span><span style={{color: 'blue'}}>Pebble</span> Toy Rental—to make playtime easier, more affordable, and way less cluttered!</p>
+                        <div className="row" id="demo" style={{border: '1px solid #B8D0FF', backgroundColor: '#B8D0FF', padding: '15px', position: 'relative', right: '130px'}}>
                             <div className="col-md-9">
                                 <p style={{color: '#000', fontFamily: 'Atma', fontSize: '18px'}}>ToyPebble offers a simple, hassle-free way to keep your home clutter-free while ensuring your child has access to a world of fun and imagination. With our convenient rental plans, you can say goodbye to toy overload and hello to endless playtime adventures.</p>
                             </div>
@@ -65,16 +65,16 @@ function Landing() {
                 </Grid>
                 <Grid item xs={6} md={4} container justifyContent="center" alignItems="center" >
                     <MyCard
-                        imgSrc="/assets/Piggy.png"
-                        title="Budget-Friendly Fun"
-                        text="Who says playtime has to break the bank? With ToyPebble, you can enjoy all the benefits of a constantly rotating toy collection without emptying your wallet. Our subscription plans are designed to fit every budget, so you can save money while keeping your little one entertained"
+                        imgSrc="/assets/Eco Friendly.png"
+                        title="Eco-Friendly Play"
+                        text="At ToyPebble, we're passionate about protecting the planet. By renting toys instead of buying them, you're not only reducing waste but also teaching your child the importance of sustainability. Join us in our mission to create a greener, cleaner world by stepping into the world of toy rental."
                     />
                 </Grid>
                 <Grid item xs={6} md={4} container justifyContent="center" alignItems="center" >
                     <MyCard
-                        imgSrc="/assets/Abc Blocks.png"
-                        title="Bye-Bye, Toy Clutter"
-                        text="Say farewell to the days of tripping over toy cars and stepping on LEGO bricks! Our rental service lets you enjoy the magic of playtime without sacrificing precious space in your home. When your child is done playing, simply return the toys and watch as your living room transforms into a clutter-free oasis."
+                        imgSrc="/assets/Toy Car.png"
+                        title="Hassle-Free Convenience"
+                        text="Free Convenience: Who has time to shop for toys when there's a world of fun to be had? With our subscription service, ordering toys is as easy as 1-2-3. Simply choose your plan, pick your toys, and let us handle the rest. We'll deliver them straight to your door, so you can spend less time shopping and more time playing."
                     />
                 </Grid>
             </Grid>
@@ -205,7 +205,7 @@ function Landing() {
             </Grid>
 
             <Grid container sx={{backgroundColor: '#E0FFDD'}} justifyContent="center">
-                <h1 className="pt-5" style={{fontWeight: '600', color: '#4DCC10'}}>how we keep our toys squeaky clean and germ-free:</h1>
+                <h1 className="pt-5" style={{fontWeight: '600', color: '#4DCC10'}}>How we keep our toys squeaky clean and germ-free:</h1>
                 <Grid container direction="row" className="mt-5" justifyContent="center" >
                     <Grid item container xs={12} md={3} className="mx-1 my-2" >
                         <Grid container direction="row">

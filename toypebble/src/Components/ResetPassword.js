@@ -3,11 +3,11 @@ import { Button, Grid, FormControl, InputLabel, OutlinedInput, InputAdornment } 
 import { IconButton } from '@mui/material';
 import { Visibility, VisibilityOff } from '@mui/icons-material';
 import MyNavbar from "./Navbar";
-import axios from 'axios'; // Import Axios or another HTTP library for making requests
+import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
 function ResetPassword() {
-  const [password, setPassword] = useState('');
+  const [newPassword, setNewPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState('');
@@ -19,56 +19,55 @@ function ResetPassword() {
 
   const currentUrl = window.location.href;
 
-// Find the position of the token parameter in the URL
-const tokenIndex = currentUrl.indexOf('token=');
+  // Find the position of the token parameter in the URL
+  const tokenIndex = currentUrl.indexOf('token=');
 
-// If the token parameter is found
-let token = "";
-if (tokenIndex !== -1) {
-  // Extract the token value
-  token = currentUrl.substring(tokenIndex + 6);
+  // If the token parameter is found
+  let token = "";
+  if (tokenIndex !== -1) {
+    // Extract the token value
+    token = currentUrl.substring(tokenIndex + 6);
 
-  // Log or use the token as needed
-  console.log(token);
-} else {
-  console.error('Token parameter not found in the URL');
-}
+    // Log or use the token as needed
+    console.log(token);
+  } else {
+    console.error('Token parameter not found in the URL');
+  }
 
-
-const handleSubmit = async (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
   
-    if (password !== confirmPassword) {
+    if (newPassword !== confirmPassword) {
       setError('Passwords do not match');
       return;
     }
 
     try {
-        // Make a request to your backend to handle the password reset
-        const response = await fetch('http://127.0.0.1:8080/api/auth/resetPassword', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({token, password, confirmPassword }),
-        });
+      // Make a request to your backend to handle the password reset
+      const response = await axios.post('http://127.0.0.1:8080/api/auth/resetpassword', {
+        token,
+        newPassword,
+        confirmPassword
+      });
   
-        if (response.ok) {
-          const data = await response.json();
-          // Handle success, e.g., show a success message to the user
-          console.log('Password reset successful:', data.message);
-          setPassword("")
-          setConfirmPassword("")
-          navigate('/login')
-        } else {
-          const errorData = await response.json();
-          // Handle errors, e.g., display an error message to the user
-          console.error('Password reset failed:', errorData.message);
-        }
-      } catch (error) {
-        console.error('Error during password reset:', error);
+      // Handle success
+      if (response.status === 200) {
+        const data = response.data;
+        console.log('Password reset successful:', data.message);
+        setNewPassword("");
+        setConfirmPassword("");
+        setSuccessMessage('Password reset successful');
+        setError('');
+        navigate('/login');
+      } else {
+        setError('Password reset failed');
       }
-    };
+    } catch (error) {
+      // Handle errors
+      console.error('Error during password reset:', error);
+      setError('Password reset failed');
+    }
+  };
 
   return (
     <div style={{ backgroundColor: '#F1DDC4', height: '100vh' }}>
@@ -90,8 +89,8 @@ const handleSubmit = async (e) => {
                 id="outlined-adornment-password"
                 name="password"
                 type={showPassword ? 'text' : 'password'}
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
+                value={newPassword}
+                onChange={(e) => setNewPassword(e.target.value)}
                 endAdornment={
                   <InputAdornment position="end">
                     <IconButton

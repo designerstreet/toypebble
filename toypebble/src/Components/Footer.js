@@ -3,20 +3,11 @@ import { Link } from "react-router-dom";
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import EmailIcon from '@mui/icons-material/Email';
+import './Footer.css';
 
 function Footer() {
     return(
-        <div className="container-fluid pt-5">
-            {/* <p>
-                <Link to="/privacyPolicy" style={{textDecoration: 'none', color: '#000'}}>
-                Privacy Policy
-                </Link>
-            </p>
-            <p>
-                <Link to="/termsCondition" style={{textDecoration: 'none', color: '#000'}}>
-                Terms And Conditions
-                </Link>
-            </p> */}
+        <div className="container-fluid pt-5">            
             <Grid container direction="row" justifyContent="center" alignItems="center">
                 <Grid item container xs={12} md={6}>
                     <Grid item container xs={12} md={12}>

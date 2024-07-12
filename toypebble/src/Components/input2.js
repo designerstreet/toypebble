@@ -116,19 +116,15 @@ export default function InputAdornments2() {
       </Grid>
       <Grid item container xs={12} md={12}>
         <FormControl sx={{ m: 1 }} fullWidth variant="outlined">
-          <InputLabel htmlFor="outlined-input-with-icon-adornment">Enter Baby's age</InputLabel>
+          <FormLabel htmlFor="outlined-input-with-icon-adornment">Enter Baby's DOB</FormLabel>
           <OutlinedInput
             id="outlined-input-with-icon-adornment"
             name="age"
-            type="number"
+            type="date"
             value={formValues.age}
             onChange={handleInputChange}
-            endAdornment={
-              <InputAdornment position="end">
-                <Cake />
-              </InputAdornment>
-            }
-            label="Enter baby's age"
+            
+            label="Enter baby's DOB"
             sx={{ backgroundColor: '#FFF' }}
           />
         </FormControl>

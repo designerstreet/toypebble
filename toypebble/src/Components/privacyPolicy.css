@@ -5,3 +5,7 @@ p{
 li{
     font-size: 20px;
 }
+
+#font, .mt-5, .mt-3, strong, li{
+    font-family: sans-serif !important;
+}
