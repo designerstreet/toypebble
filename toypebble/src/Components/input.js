@@ -1,5 +1,4 @@
-import * as React from 'react';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import IconButton from '@mui/material/IconButton';
 import OutlinedInput from '@mui/material/OutlinedInput';
 import InputLabel from '@mui/material/InputLabel';
@@ -10,14 +9,16 @@ import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined
 import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import { Grid, Button, FormGroup, FormControlLabel, Checkbox } from '@mui/material';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate
+import { useNavigate } from 'react-router-dom';
+import { useAuth } from '../AuthContext'; // Import useAuth hook
 
 export default function InputAdornments() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState('');
-  const navigate = useNavigate(); // Initialize useNavigate
+  const navigate = useNavigate();
+  const { login } = useAuth(); // Get login function from useAuth
 
   const handleClickShowPassword = () => setShowPassword((show) => !show);
 
@@ -43,9 +44,8 @@ export default function InputAdornments() {
       const data = await response.json();
       // Handle successful login
       console.log('Login successful:', data);
-
-      // Redirect to subscription page using navigate
-      navigate('/subscription');
+      login(); // Set the user as authenticated
+      navigate('/subscription'); // Redirect to subscription page
     } catch (error) {
       setError(error.message);
     }

@@ -5,7 +5,7 @@ import Footer from "./Footer";
 function OurStory() {
     return(
         <div>
-            <MyNavbar/>
+            {/* <MyNavbar/> */}
 
             <Grid className="pt-5 pb-5" item container sx={{backgroundColor: '#8769FF'}}>
                 <Grid  item container sx={{backgroundColor: '#bb9ff9', marginRight: '25px', marginLeft: '25px'}} justifyContent="center" alignItems="center">

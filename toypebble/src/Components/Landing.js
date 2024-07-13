@@ -9,7 +9,7 @@ import Footer from "./Footer";
 function Landing() {
     return (
         <div className="landing">
-            <MyNavbar backgroundColor="rgb(246 214 144 / 59%)"/>
+            {/* <MyNavbar backgroundColor="rgb(246 214 144 / 59%)"/> */}
             <div className="banner-container">
                 <img src="/assets/banner (1).png" className="img-fluid" alt="Banner" />
             </div>

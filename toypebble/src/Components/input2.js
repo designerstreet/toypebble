@@ -2,6 +2,8 @@ import * as React from 'react';
 import { Box, IconButton, OutlinedInput, InputLabel, InputAdornment, FormControl, FormControlLabel, FormLabel, Grid, Radio, RadioGroup, Button, TextField } from '@mui/material';
 import { EmailOutlined, Cake, ChildCare, PersonOutlineOutlined, Visibility, VisibilityOff, Home, Boy, Girl } from '@mui/icons-material';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
+import { useAuth } from '../AuthContext';
+
 
 export default function InputAdornments2() {
   const [showPassword, setShowPassword] = React.useState(false);
@@ -17,6 +19,7 @@ export default function InputAdornments2() {
   });
   const [error, setError] = React.useState('');
   const navigate = useNavigate(); // Initialize useNavigate
+  const { signup } = useAuth(); // Get signup function from useAuth
 
   const handleClickShowPassword = () => setShowPassword((show) => !show);
   const handleMouseDownPassword = (event) => event.preventDefault();
@@ -52,6 +55,7 @@ export default function InputAdornments2() {
       // Handle successful signup, e.g., redirect to login page
 
        // Redirect to subscription page using navigate
+       signup(); // Set the user as authenticated
        navigate('/subscription');
     } catch (error) {
       setError(error.message);

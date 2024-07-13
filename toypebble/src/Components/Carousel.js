@@ -7,7 +7,7 @@ const Carousel = ({ sets, index }) => {
   const [groupIndex, setGroupIndex] = useState(null);
   const [setIndex, setSetIndex] = useState(null);
   const [imageSize, setImageSize] = useState(null);
-  console.log(sets + index);
+
 
   const groupColors = ['#B8D4FF', '#F8FFA7', '#AAFFB2', '#FFA1A1', '#DCC1FF', '#FFBFE2', '#FFD8AA']; // Define your colors here
 

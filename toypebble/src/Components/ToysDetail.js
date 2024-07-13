@@ -100,17 +100,7 @@ function ToysDetail({ groupIndex, setIndex, imageSize }) {
               <p>{currentDescription}</p>
             </Grid>
 
-            <Grid item container xs={12} md={12} justifyContent="center" alignItems="center">
-              {/* Use image link for navigation */}
-              <Button
-                variant="contained"
-                fullWidth
-                sx={{ backgroundColor: '#738DE7', color: '#FFF', fontWeight: '600' }}
-                // onClick={() => window.location.href = images[imageSetIndex][selectedImage].link}
-              >
-                Book Now
-              </Button>
-            </Grid>
+           
           </Grid>
         </Grid>
       </Grid>

@@ -12,7 +12,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 function Contact() {
     return(
         <div>
-            <MyNavbar/>
+            {/* <MyNavbar/> */}
             <Grid item container sx={{backgroundColor: '#D2DCFF'}}>
                 <Grid item container xs={5} md={5} >
                     <Grid item container xs={12} md={12}>
@@ -28,18 +28,7 @@ function Contact() {
                     <a href="tel:8904299962" style={{textDecoration: 'none', color: '#000', fontSize: '25px'}}> <LocalPhoneIcon/> 8904299962</a>
                     </Grid>
                 </Grid>
-                <Grid item container xs={5} md={5}>
-                    <Grid item container xs={12} md={12}>
-                        <Link to="/privacyPolicy" style={{textDecoration: 'none', color: '#000', fontSize: '30px'}}>
-                        Privacy Policy
-                        </Link>
-                        </Grid>
-                        <Grid item container xs={12} md={12}>
-                        <Link to="/termsCondition" style={{textDecoration: 'none', color: '#000', fontSize: '30px'}}>
-                        Terms And Conditions
-                        </Link>
-                    </Grid>
-                </Grid>
+             
                 <Grid item container xs={2} md={2}>
                     <Grid item container xs={12} md={12}>
                     <a href="#" style={{textDecoration: 'none'}}>

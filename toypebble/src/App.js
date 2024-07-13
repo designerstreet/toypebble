@@ -13,10 +13,15 @@ import ResetPassword from './Components/ResetPassword';
 import OurStory from './Components/OurStory';
 import Contact from './Components/Contact';
 import Order from './Components/Order';
+import Checkout from './Components/Checkout';
+import MyNavbar from './Components/Navbar';
+import { AuthProvider } from './AuthContext';
 
 function App() {
   return (
+    <AuthProvider>
     <HashRouter>
+    <MyNavbar backgroundColor="#fff" />
     <Routes>
       <Route path="/" element={<Landing />} />   
       <Route path="/subscription" element={<Subscription />} />
@@ -31,9 +36,11 @@ function App() {
       <Route path='/ourStory' element={<OurStory/>} />
       <Route path='/contact' element={<Contact/>} />
       <Route path='/myOrders' element={<Order/>} />
+      <Route path='/checkout' element={<Checkout/>} />
       {/* other routes */}
     </Routes>
   </HashRouter>
+  </AuthProvider>
   );
 }
 

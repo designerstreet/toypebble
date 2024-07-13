@@ -5,7 +5,7 @@ import Footer from "./Footer";
 function Order() {
     return(
         <div>
-            <MyNavbar backgroundColor="rgb(255 242 150 / 57%)"/>
+            {/* <MyNavbar backgroundColor="rgb(255 242 150 / 57%)"/> */}
             <Grid item container xs={12} md={12}>
                 <img src="/assets/Screenshot 2024-07-12 133911.png" className="Img-fluid" style={{width: '100%'}}/>
             </Grid>

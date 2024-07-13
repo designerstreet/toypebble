@@ -2,11 +2,34 @@ import { Grid, Link } from "@mui/material";
 import MyNavbar from "./Navbar";
 import Footer from "./Footer";
 import './subscription.css';
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
+import { useAuth } from "../AuthContext";
 
 function Subscription() {
+    const navigate = useNavigate();
+    const [selectedPlan, setSelectedPlan] = useState(null);
+    const { isAuthenticated } = useAuth();
+
+    const handleSubscriptionSelection = (plan) => {
+        setSelectedPlan(plan);
+        
+        // Immediately navigate when a plan is selected
+        navigate(`/toys?plan=${plan}`);
+    };
+
+    const handleLinkClick = (plan) => {
+        if (isAuthenticated) {
+            handleSubscriptionSelection(plan);
+          } else {
+            // Redirect to login page if not authenticated
+            navigate('/login');
+          }
+    };
+
     return(
         <div>
-            <MyNavbar backgroundColor="rgb(200 157 157 / 35%)"/>
+            {/* <MyNavbar backgroundColor="rgb(200 157 157 / 35%)"/> */}
             <Grid container>
                 <img src="/assets/2147689857 1 (1).png" className="img-fluid" alt="" style={{width: '100%'}}/>
                 <div style={{
@@ -87,14 +110,20 @@ function Subscription() {
                 </Grid>
 
                 <Grid item container xs={12} md={6} lg={4} justifyContent="center" alignItems="center">
-                    <Link href="/#/toys"><img src="/assets/Frame 11.png" className="img-fluid" style={{cursor: 'pointer'}}/></Link>
+                    <Link onClick={() => handleLinkClick('3-month')}>
+                        <img src="/assets/Frame 11.png" className="img-fluid" style={{ cursor: 'pointer' }} alt="3-month subscription" />
+                    </Link>
                 </Grid>
                 <Grid item container xs={12} md={6} lg={4} justifyContent="center" alignItems="center">
-                <Link href="/#/toys"><img src="/assets/Frame 12.png" className="img-fluid" style={{cursor: 'pointer'}}/></Link>
+                    <Link onClick={() => handleLinkClick('6-month')}>
+                        <img src="/assets/Frame 12.png" className="img-fluid" style={{ cursor: 'pointer' }} alt="6-month subscription" />
+                    </Link>
                 </Grid>
                 <Grid item container xs={12} md={6} lg={4} justifyContent="center" alignItems="center">
-                <Link href="/#/toys"><img src="/assets/Frame 13.png" className="img-fluid" style={{cursor: 'pointer'}}/></Link>
-                </Grid>                
+                    <Link onClick={() => handleLinkClick('12-month')}>
+                        <img src="/assets/Frame 13.png" className="img-fluid" style={{ cursor: 'pointer' }} alt="12-month subscription" />
+                    </Link>
+                </Grid>               
             </Grid>
 
             <Grid container justifyContent="center" alignItems="center" className="mt-5 pt-4" style={{backgroundColor: '#5891FF', color: '#FFF'}}>
