@@ -13,7 +13,9 @@ mongoose.connect(mongoDB, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('MongoDB connected'))
   .catch(err => console.log(err));
 
-app.use(cors());
+  app.use(cors({
+    origin: '*'
+  }));
 app.use(bodyParser.json());
 
 app.use('/api/auth', require('./routes/auth'));
