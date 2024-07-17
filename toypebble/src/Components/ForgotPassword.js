@@ -13,7 +13,7 @@ function ForgotPassword() {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://127.0.0.1:8080/api/auth/forgotpassword', { email });
+      const response = await axios.post('https://app.toypebble.com/api/auth/forgotpassword', { email });
       setSuccessMessage(response.data.msg);
       setError('');
       setEmail('');
