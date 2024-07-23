@@ -42,35 +42,35 @@ function Landing() {
 
 
             <Grid container  justifyContent="center" alignItems="center"  direction="row" className="mt-5">
-                <Grid item xs={6} md={3} lg={4} container justifyContent="center" alignItems="center" >
+                <Grid item xs={12} md={6} lg={4} container justifyContent="center" alignItems="center" >
                     <MyCard
                         imgSrc="/assets/Pyramid.png"
                         title="Dive into a World of Variety"
                         text="Imagine having access to a treasure trove of toys at your fingertips. From action-packed playsets to brain-boosting puzzles, our collection has something for every child's wildest dreams. With new toys added regularly, the fun never stops!"
                     />
                 </Grid>
-                <Grid item xs={6} md={3} lg={4} container justifyContent="center" alignItems="center" >
+                <Grid item xs={12} md={6} lg={4} container justifyContent="center" alignItems="center" >
                     <MyCard
                         imgSrc="/assets/Piggy.png"
                         title="Budget-Friendly Fun"
                         text="Who says playtime has to break the bank? With ToyPebble, you can enjoy all the benefits of a constantly rotating toy collection without emptying your wallet. Our subscription plans are designed to fit every budget, so you can save money while keeping your little one entertained"
                     />
                 </Grid>
-                <Grid item xs={6} md={3} lg={4} container justifyContent="center" alignItems="center" >
+                <Grid item xs={12} md={6} lg={4} container justifyContent="center" alignItems="center" >
                     <MyCard
                         imgSrc="/assets/Abc Blocks.png"
                         title="Bye-Bye, Toy Clutter"
                         text="Say farewell to the days of tripping over toy cars and stepping on LEGO bricks! Our rental service lets you enjoy the magic of playtime without sacrificing precious space in your home. When your child is done playing, simply return the toys and watch as your living room transforms into a clutter-free oasis."
                     />
                 </Grid>
-                <Grid item xs={6} md={4} container justifyContent="center" alignItems="center" >
+                <Grid item xs={12} md={6} lg={4} container justifyContent="center" alignItems="center" >
                     <MyCard
                         imgSrc="/assets/Eco Friendly.png"
                         title="Eco-Friendly Play"
                         text="At ToyPebble, we're passionate about protecting the planet. By renting toys instead of buying them, you're not only reducing waste but also teaching your child the importance of sustainability. Join us in our mission to create a greener, cleaner world by stepping into the world of toy rental."
                     />
                 </Grid>
-                <Grid item xs={6} md={4} container justifyContent="center" alignItems="center" >
+                <Grid item xs={12} md={4} lg={4} container justifyContent="center" alignItems="center" >
                     <MyCard
                         imgSrc="/assets/Toy Car.png"
                         title="Hassle-Free Convenience"

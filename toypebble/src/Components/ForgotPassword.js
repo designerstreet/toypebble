@@ -13,7 +13,7 @@ function ForgotPassword() {
     e.preventDefault();
 
     try {
-      const response = await axios.post('https://app.toypebble.com/api/auth/forgotpassword', { email });
+      const response = await axios.post(`${process.env.REACT_APP_PUBLIC_BASE_URL}/forgotpassword`, { email });
       setSuccessMessage(response.data.msg);
       setError('');
       setEmail('');

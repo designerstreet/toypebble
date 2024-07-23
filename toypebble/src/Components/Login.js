@@ -15,10 +15,10 @@ function Login() {
                     <h1 className="text-center mt-3" style={{color: '#000', fontSize: '3.5rem', fontWeight: '500'}}>Login To <span style={{color: '#E83535'}}>Toy</span><span style={{color: '#3568E8'}}>Pebble</span></h1>
                 </Grid>
 
-                <Grid item container md={4} justifyContent="start" alignItems="center">
+                <Grid item container xs={12} md={4} justifyContent="start" alignItems="center" sx={{ display: {xs: 'none', sm: 'block'}}}>
                     <img src="/assets/Group (9).png" alt="" style={{height: '270px'}}/>
                 </Grid>
-                <Grid item container md={4} className="pt-3">
+                <Grid item container xs={12} md={4} className="pt-3">
                     <InputAdornments/>
                     <Grid container direction="row">
                         
@@ -27,7 +27,7 @@ function Login() {
                         </Grid>
                     </Grid>
                 </Grid>
-                <Grid container item md={4} justifyContent="end" alignItems="center">
+                <Grid container item xs={12} md={4} justifyContent="end" alignItems="center" >
                     <img src="/assets/Group (10).png" alt="" style={{height: '270px'}} />
                 </Grid>
 

@@ -44,7 +44,7 @@ function ResetPassword() {
 
     try {
       // Make a request to your backend to handle the password reset
-      const response = await axios.post('https://app.toypebble.com/api/auth/resetpassword', {
+      const response = await axios.post(`${process.env.REACT_APP_PUBLIC_BASE_URL}/resetpassword`, {
         token,
         newPassword,
         confirmPassword

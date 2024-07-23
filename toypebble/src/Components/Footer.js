@@ -7,7 +7,7 @@ import './Footer.css';
 
 function Footer() {
     return(
-        <div className="container-fluid pt-5">            
+        <div className="container-fluid pt-5" style={{backgroundColor: 'rgb(77 97 167'}}>            
             <Grid container direction="row" justifyContent="center" alignItems="center">
                 <Grid item container xs={12} md={6}>
                     <Grid item container xs={12} md={12}>

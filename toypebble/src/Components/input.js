@@ -28,7 +28,7 @@ export default function InputAdornments() {
 
   const handleLogin = async () => {
     try {
-      const response = await fetch('https://app.toypebble.com/api/auth/login', {
+      const response = await fetch(`${process.env.REACT_APP_PUBLIC_BASE_URL}/login`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -42,8 +42,15 @@ export default function InputAdornments() {
       }
 
       const data = await response.json();
+      
       // Handle successful login
       console.log('Login successful:', data);
+      localStorage.setItem(
+        "token",
+        JSON.stringify(data.token)
+      );
+      
+      
       login(); // Set the user as authenticated
       navigate('/subscription'); // Redirect to subscription page
     } catch (error) {

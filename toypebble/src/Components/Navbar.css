@@ -6,3 +6,12 @@
     z-index: 10; /* Ensure the navbar is above other elements */
   }
   
+
+  .navbar-custom .nav-link {
+    transition: color 0.3s, border-bottom 0.3s;
+  }
+  
+  .navbar-custom .nav-link:hover {
+    color: #FFADAD;
+  }
+  

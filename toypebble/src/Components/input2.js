@@ -37,7 +37,7 @@ export default function InputAdornments2() {
     }
 
     try {
-      const response = await fetch('https://app.toypebble.com/api/auth/signup', {
+      const response = await fetch(`${process.env.REACT_APP_PUBLIC_BASE_URL}/signup`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
