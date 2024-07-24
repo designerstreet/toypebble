@@ -52,6 +52,10 @@ export default function InputAdornments2() {
 
       const data = await response.json();
       console.log('Signup successful:', data);
+      localStorage.setItem(
+        "token",
+        JSON.stringify(data.token)
+      );
       // Handle successful signup, e.g., redirect to login page
 
        // Redirect to subscription page using navigate
