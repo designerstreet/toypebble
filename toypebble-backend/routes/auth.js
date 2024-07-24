@@ -13,8 +13,8 @@ const authenticateToken = require('../middleware/authenticateToken');
 const Order = require('../models/Order');
 
 const razorpay = new Razorpay({
-	key_id: 'rzp_live_S5x5lN8i9NrPUL',
-  key_secret: 'w1cNMCD04ZNMklgjQWY3i2Zv'
+	key_id: process.env.KEY_ID,
+  key_secret: process.env.KEY_SECRET
 	
   // key_id: 'rzp_test_MbvCrlVKQULYIu',
   // key_secret: 'v3emfaULHJ1Gc6gJYTSAolDl',
