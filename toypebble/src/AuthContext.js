@@ -8,15 +8,18 @@ export const AuthProvider = ({ children }) => {
     return storedAuth ? JSON.parse(storedAuth) : false;
   });
 
+  
+
   const login = () => {
     setIsAuthenticated(true);
     localStorage.setItem('isAuthenticated', JSON.stringify(true));
-    
+   
   };
 
   const signup = () => {
     setIsAuthenticated(true);
     localStorage.setItem('isAuthenticated', JSON.stringify(true));
+    
   };
 
   const logout = () => {

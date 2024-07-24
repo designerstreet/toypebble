@@ -1,3 +1,3 @@
-#font, .mt-5, .mt-3, strong, li{
+.special #font, .special .mt-5, .special .mt-3, .special strong, .special li{
     font-family: sans-serif !important;
 }

@@ -3,7 +3,7 @@ import React from 'react';
 
 function TermsCondition() {
     return(
-        <div  className="mt-5" id='font'>
+        <div  className="container special mt-5" id='font'>
             <h1 ><strong id='font'>Terms and Conditions</strong></h1>
             <h4 className="mt-5" id='font'>Last Updated on 10th June, 2024</h4>
 

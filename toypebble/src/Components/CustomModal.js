@@ -1,5 +1,6 @@
 import React from 'react';
-import { Modal, Box } from '@mui/material';
+import { Modal, Box, IconButton } from '@mui/material';
+import CloseIcon from '@mui/icons-material/Close';
 
 const CustomModal = ({ open, handleClose, children }) => {
   return (
@@ -16,13 +17,23 @@ const CustomModal = ({ open, handleClose, children }) => {
           left: '50%',
           transform: 'translate(-50%, -50%)',
           width: '80%',
-          height: '80%',
+          height: '82%',
           bgcolor: 'background.paper',
           boxShadow: 24,
           p: 4,
           overflow: 'scroll',
         }}
       >
+         <IconButton
+          sx={{
+            position: 'absolute',
+            top: 8,
+            right: 8,
+          }}
+          onClick={handleClose}
+        >
+          <CloseIcon />
+        </IconButton>
         {children}
       </Box>
     </Modal>

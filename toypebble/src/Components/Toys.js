@@ -129,7 +129,11 @@ function Toys() {
                     
             ))}
 
-
+            <Grid item container justifyContent="center" alignItems="center" className="mt-5">
+                <Grid item container xs={12} md={12} sx={{backgroundColor: '#FFF', color: 'red', fontSize: '22px'}} justifyContent="center" alignItems="center">
+                    <span style={{fontWeight: '700', fontSize: '25px'}}>Disclaimer: </span> &nbsp; All this images of toys are for reference purpose only.
+                </Grid>
+            </Grid>
             <Footer/>
     
         </div>

@@ -42,14 +42,22 @@ export default function InputAdornments() {
       }
 
       const data = await response.json();
-      
+      console.log('Backend Response:', data); // Debug log
+     
       // Handle successful login
       console.log('Login successful:', data);
+
+      const userData = data.newUser || data.user;
       localStorage.setItem(
         "token",
         JSON.stringify(data.token)
       );
+      localStorage.setItem(
+        "user",
+        JSON.stringify(userData)
+      );
       
+
       
       login(); // Set the user as authenticated
       navigate('/subscription'); // Redirect to subscription page

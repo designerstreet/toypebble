@@ -8,8 +8,12 @@ import { useAuth } from '../AuthContext';
 import './Navbar.css';
 
 function MyNavbar({ backgroundColor }) {
-  const { isAuthenticated, user, logout } = useAuth();
+  const { isAuthenticated,  logout } = useAuth();
   const location = useLocation();
+
+  // Retrieve user data from localStorage
+  const storedUser = JSON.parse(localStorage.getItem('user')) || {};
+  const parentname = storedUser.parentname || '';
 
   const getLinkStyle = (path) => ({
     color: location.pathname === path ? '#FFADAD' : '#000',
@@ -25,6 +29,7 @@ function MyNavbar({ backgroundColor }) {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto"></Nav>
           <Nav>
+          <Nav.Link href="/" style={getLinkStyle('/')}>Home</Nav.Link>
             <Nav.Link href="/#/subscription" style={getLinkStyle('/subscription')}>Subscription</Nav.Link>
             {isAuthenticated && (
               <Nav.Link href="/#/myOrders" style={getLinkStyle('/myOrders')}>My Orders</Nav.Link>
@@ -35,7 +40,7 @@ function MyNavbar({ backgroundColor }) {
             </Nav.Link>
             <Nav.Link href="/#/contact" style={getLinkStyle('/contact')}>Contact Us</Nav.Link>
             {isAuthenticated ? (
-             <NavDropdown title={`Welcome, ${user ? user.parentname : ''}`} id="basic-nav-dropdown">
+             <NavDropdown title={<span style={{ color: 'rgb(232 121 121)', fontWeight: '700' }}>Welcome, {parentname}</span>} id="basic-nav-dropdown">
              <NavDropdown.Item onClick={logout}>Logout</NavDropdown.Item>
            </NavDropdown>
             ) : (

@@ -1,11 +1,11 @@
 p{
-    font-size: 24px;
-}
-
-li{
     font-size: 20px;
 }
 
-#font, .mt-5, .mt-3, strong, li{
+li{
+    font-size: 17px;
+}
+
+.special #font, .special .mt-5, .special .mt-3, .special strong, .special li, .special span{
     font-family: sans-serif !important;
 }

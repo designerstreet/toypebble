@@ -2,7 +2,7 @@ import './privacyPolicy.css';
 
 function PrivacyPolicy() {
     return(
-        <div className="container mt-5">
+        <div className="container special mt-5">
             <h1><strong>Privacy Policy</strong></h1>
             <h4 className="mt-5">Last Updated on June 10, 2024</h4>
             <p className="mt-3">This Privacy Policy outlines how your personal information is collected, used, and shared when you visit or make a purchase from the ToyPebble website.</p>

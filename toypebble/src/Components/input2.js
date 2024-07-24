@@ -52,9 +52,15 @@ export default function InputAdornments2() {
 
       const data = await response.json();
       console.log('Signup successful:', data);
+
+      const userData = data.newUser || data.user;
       localStorage.setItem(
         "token",
         JSON.stringify(data.token)
+      );
+      localStorage.setItem(
+        "user",
+        JSON.stringify(userData)
       );
       // Handle successful signup, e.g., redirect to login page
 

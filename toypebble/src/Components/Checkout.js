@@ -86,9 +86,9 @@ function Checkout() {
       name: 'Toypebble',
       description: 'Thank you for your purchase.',
       handler: async function (response) {
-        alert(response.razorpay_payment_id);
-        alert(response.razorpay_order_id);
-        alert(response.razorpay_signature);
+        // alert(response.razorpay_payment_id);
+        // alert(response.razorpay_order_id);
+        // alert(response.razorpay_signature);
 
         await createOrder(response.razorpay_order_id, plan, ageGroup);
         // Navigate to the order page with order details
