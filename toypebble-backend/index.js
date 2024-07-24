@@ -12,7 +12,8 @@ const app = express();
 const {port, allowedDomains } = config;
 
 // Replace with your MongoDB connection string
-const mongoDB = 'mongodb+srv://nanditak472:kuHJu4pByhDXrTFd@cluster0.flgeiqe.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
+// const mongoDB = 'mongodb+srv://nanditak472:kuHJu4pByhDXrTFd@cluster0.flgeiqe.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
+const mongoDB = 'mongodb+srv://toypebble:sfjuUUVdnOYRPpUe@cluster0.8tth1lx.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
 
 mongoose.connect(mongoDB, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('MongoDB connected'))

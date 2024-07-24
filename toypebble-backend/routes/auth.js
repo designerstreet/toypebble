@@ -68,8 +68,10 @@ router.post('/signup', async (req, res) => {
 
     await newUser.save();
 
-    // Generate a JWT token for the authenticated user
-    const token = jwt.sign({ userId: newUser._id.toString() }, process.env.JWT_SECRET, { expiresIn: "1d" });
+    // Generate a JWT token for the authenticated user   
+
+    const payload = { user: { id: newUser._id.toString() } };
+    const token = jwt.sign(payload, process.env.JWT_SECRET, { expiresIn: "1d" });
 
     res.status(201).json({ message: "Registered Successfully", newUser, token });
   } catch (error) {
@@ -104,7 +106,17 @@ router.post('/login', async (req, res) => {
     const payload = { user: { id: user._id } };
     jwt.sign(payload, process.env.JWT_SECRET, { expiresIn: '1d' }, (err, token) => {
       if (err) throw err;
-      res.json({ token });
+      res.json({ token,
+        user: {
+          parentname: user.parentname, // Include any other user details you need
+          email: user.email,
+          babyname: user.babyname,
+          address: user.address,
+          gender: user.gender,
+          age: user.age
+          // Add more fields as needed
+        }
+       });
     });
   } catch (err) {
     console.error(err.message);
