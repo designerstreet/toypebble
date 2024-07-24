@@ -79,7 +79,7 @@ function Checkout() {
     console.log(data);
 
     const options = {
-      key: __DEV__ ? 'rzp_test_MbvCrlVKQULYIu' : 'rzp_live_S5x5lN8i9NrPUL',
+      key: __DEV__ ? process.env.KEY_TEST_ID : process.env.KEY_LIVE_ID,
       currency: data.currency,
       amount: data.amount.toString(),
       order_id: data.id,
