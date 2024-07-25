@@ -38,3 +38,17 @@
     color: #186CCC;
   }
   
+  .floating-text {
+    display: inline-block;
+    white-space: nowrap;
+    animation: floatAnimation 10s linear infinite;
+}
+
+@keyframes floatAnimation {
+  0% {
+      transform: translateX(100%);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}

@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { Box, IconButton, OutlinedInput, InputLabel, InputAdornment, FormControl, FormControlLabel, FormLabel, Grid, Radio, RadioGroup, Button, TextField } from '@mui/material';
-import { EmailOutlined, Cake, ChildCare, PersonOutlineOutlined, Visibility, VisibilityOff, Home, Boy, Girl } from '@mui/icons-material';
+import { Box, IconButton, OutlinedInput, InputLabel, InputAdornment, FormControl, FormControlLabel, FormLabel, Grid, Radio, RadioGroup, Button } from '@mui/material';
+import { EmailOutlined, ChildCare, PersonOutlineOutlined, Visibility, VisibilityOff, Home, Boy, Girl } from '@mui/icons-material';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import { useAuth } from '../AuthContext';
 
@@ -47,7 +47,7 @@ export default function InputAdornments2() {
 
       if (!response.ok) {
         const errorData = await response.json();
-        throw new Error(errorData.msg || 'Signup failed');
+        throw new Error(errorData.message || 'Signup failed');
       }
 
       const data = await response.json();

@@ -18,13 +18,14 @@ function MyNavbar({ backgroundColor }) {
   const getLinkStyle = (path) => ({
     color: location.pathname === path ? '#FFADAD' : '#000',
     fontWeight: '600',
-    borderBottom: location.pathname === path ? '2px solid #FFADAD' : 'none'
+    borderBottom: location.pathname === path ? '2px solid #FFADAD' : 'none',
+    fontFamily: 'sans-serif'
   });
 
   return (
     <Navbar collapseOnSelect expand="lg" className="navbar-custom" style={{ backgroundColor }}>
       <Container>
-        <Navbar.Brand href="/"><img src='/assets/ToyPebble_Logo.png' alt='' width={80} height={80} /></Navbar.Brand>
+        <Navbar.Brand href="/"><img src='/assets/ToyPebble_Logo.png' alt='' width={150} height={100} /></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto"></Nav>

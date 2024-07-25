@@ -3,4 +3,14 @@
    
   }
   
-  
+  /* Order.css */
+.Img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 600px) {
+  .MuiTableCell-root {
+    font-size: 8px !important;
+  }
+}

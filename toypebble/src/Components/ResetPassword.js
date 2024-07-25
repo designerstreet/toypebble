@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Button, Grid, FormControl, InputLabel, OutlinedInput, InputAdornment } from "@mui/material";
 import { IconButton } from '@mui/material';
 import { Visibility, VisibilityOff } from '@mui/icons-material';
-import MyNavbar from "./Navbar";
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
@@ -58,7 +57,7 @@ function ResetPassword() {
         setConfirmPassword("");
         setSuccessMessage('Password reset successful');
         setError('');
-        navigate('/login');
+        setTimeout(() => navigate('/login'), 2000); // Redirect to login after 2 seconds
       } else {
         setError('Password reset failed');
       }
@@ -71,7 +70,7 @@ function ResetPassword() {
 
   return (
     <div style={{ backgroundColor: '#F1DDC4', height: '100vh' }}>
-      <MyNavbar />
+      
       <Grid container direction="row" style={{ backgroundColor: '#F1DDC4' }}>
         <Grid item xs={12} md={12} justifyContent="center" alignItems="center">
           <h1 className="text-center mt-3" style={{ color: '#000', fontSize: '3.5rem', fontWeight: '500' }}>RESET PASSWORD</h1>
@@ -81,8 +80,8 @@ function ResetPassword() {
           <img src="/assets/Group (9).png" alt="" style={{ height: '270px' }} />
         </Grid>
 
-        <Grid item container md={4} >
-          <Grid item container xs={12} md={12}>
+        <Grid item container md={4} xs={12} justifyContent="center" alignItems="center">
+          <Grid item container xs={12} md={12} justifyContent="center" alignItems="center">
             <FormControl sx={{ m: 1 }} fullWidth variant="outlined">
               <InputLabel htmlFor="outlined-adornment-password">Set Password</InputLabel>
               <OutlinedInput
@@ -109,7 +108,7 @@ function ResetPassword() {
             </FormControl>
           </Grid>
 
-          <Grid item container xs={12} md={12}>
+          <Grid item container xs={12} md={12} justifyContent="center" alignItems="center">
             <FormControl sx={{ m: 1 }} fullWidth variant="outlined">
               <InputLabel htmlFor="outlined-adornment-password">Confirm Password</InputLabel>
               <OutlinedInput
@@ -134,9 +133,11 @@ function ResetPassword() {
                 sx={{ backgroundColor: '#FFF' }}
               />
             </FormControl>
+            {error && <p style={{ color: 'red', textAlign: 'center', marginTop: '5px' }}>{error}</p>}
+            {successMessage && <p style={{ color: 'green', textAlign: 'center', marginTop: '5px' }}>{successMessage}</p>}
           </Grid>
 
-          <Grid item container xs={12} md={12}>
+          <Grid item container xs={12} md={12} justifyContent="center" alignItems="center">
             <Button
               variant="contained"
               onClick={handleSubmit}
@@ -160,8 +161,7 @@ function ResetPassword() {
         </Grid>
       </Grid>
 
-      {error && <p style={{ color: 'red', textAlign: 'center', marginTop: '20px' }}>{error}</p>}
-      {successMessage && <p style={{ color: 'green', textAlign: 'center', marginTop: '20px' }}>{successMessage}</p>}
+      
     </div>
   );
 }

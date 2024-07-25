@@ -1,14 +1,17 @@
 import React, { useState, useEffect } from 'react';
-import { Grid, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, CircularProgress, Typography } from '@mui/material';
+import { Grid, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, CircularProgress, Typography, useMediaQuery } from '@mui/material';
 import { useAuth } from '../AuthContext'; // Import your AuthContext
 import Footer from './Footer';
-import './Order.css'
+import './Order.css';
+import { useTheme } from '@mui/material/styles';
 
 function Order() {
   const { isAuthenticated } = useAuth();
   const [orders, setOrders] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const theme = useTheme();
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down('xs'));
 
   // Ensure token is available
   const token = JSON.parse(localStorage.getItem('token')) || '';
@@ -70,14 +73,14 @@ function Order() {
       </Grid>
       <Grid item container justifyContent="center" alignItems="center">
         <Grid item container xs={10} md={10} className="mt-5" justifyContent="center" sx={{ border: '2px solid #cacaca', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)' }}>
-          <TableContainer component={Paper}>
+          <TableContainer component={Paper} sx={{ maxWidth: '100%', overflowX: 'auto' }}>
             <Table>
-              <TableHead sx={{backgroundColor: 'rgb(182 196 245)'}}>
+              <TableHead sx={{ backgroundColor: 'rgb(182 196 245)' }}>
                 <TableRow>
-                  <TableCell sx={{ fontSize: '22px'}}>ORDER ID</TableCell>
-                  <TableCell sx={{ fontSize: '22px'}}>ORDER DATE</TableCell>
-                  <TableCell sx={{ fontSize: '22px'}}>SUBSCRIPTION PLAN</TableCell>
-                  <TableCell sx={{ fontSize: '22px'}}>AGE GROUP</TableCell>
+                  <TableCell sx={{ fontSize: isSmallScreen ? '10px' : '22px' }}>ORDER ID</TableCell>
+                  <TableCell sx={{ fontSize: isSmallScreen ? '10px' : '22px' }}>ORDER DATE</TableCell>
+                  <TableCell sx={{ fontSize: isSmallScreen ? '10px' : '22px' }}>SUBSCRIPTION PLAN</TableCell>
+                  <TableCell sx={{ fontSize: isSmallScreen ? '10px' : '22px' }}>AGE GROUP</TableCell>
                 </TableRow>
               </TableHead>
               <TableBody>
@@ -95,11 +98,11 @@ function Order() {
                   </TableRow>
                 ) : orders.length > 0 ? (
                   orders.map((order, index) => (
-                    <TableRow key={index} className='hovereffect'>
-                      <TableCell>{order.orderId}</TableCell>
-                      <TableCell>{order.orderDate}</TableCell>
-                      <TableCell>{order.plan}</TableCell>
-                      <TableCell>{order.ageGroup}</TableCell>
+                    <TableRow key={index}>
+                      <TableCell sx={{ fontSize: isSmallScreen ? '8px' : '16px' }}>{order.orderId}</TableCell>
+                      <TableCell sx={{ fontSize: isSmallScreen ? '8px' : '16px' }}>{order.orderDate}</TableCell>
+                      <TableCell sx={{ fontSize: isSmallScreen ? '8px' : '16px' }}>{order.plan}</TableCell>
+                      <TableCell sx={{ fontSize: isSmallScreen ? '8px' : '16px' }}>{order.ageGroup}</TableCell>
                     </TableRow>
                   ))
                 ) : (

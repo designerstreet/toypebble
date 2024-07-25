@@ -1,5 +1,4 @@
 import { Grid, Link } from "@mui/material";
-import MyNavbar from "./Navbar";
 import Footer from "./Footer";
 import './subscription.css';
 import { useNavigate } from "react-router-dom";
@@ -46,13 +45,13 @@ function Subscription() {
     </Grid>
             <Grid container direction="row" sx={{backgroundColor: '#FFFCB1'}}>
                 <Grid item container xs={12} md={12} justifyContent="end" alignItems="end">
-                    <img src="/assets/Group (5).png" />
+                    <img src="/assets/Group (5).png" alt="" />
                 </Grid>
                 <Grid item container xs={12} md={12} justifyContent="center" alignItems="center">
                     <h1 className="text-center" style={{fontSize: '5rem'}}>Welcome to <span style={{color: '#FF2424'}}>Toy</span><span style={{color: '#4F4FD2'}}>Pebble</span>!</h1>
                 </Grid>
                 <Grid item container xs={2} md={2} >
-                    <img src="/assets/Screenshot 2024-06-21 110505.png" style={{height: '150px', width: '170px'}}/>
+                    <img src="/assets/Screenshot 2024-06-21 110505.png" alt="" style={{height: '150px', width: '170px'}}/>
                 </Grid>
                 <Grid item container xs={8} md={8}  justifyContent="center" alignItems="center">
                     <p className="text-center" style={{fontSize: '1.7rem', color: '#7A7A7A'}}>
@@ -60,10 +59,10 @@ function Subscription() {
                     </p>
                 </Grid>
                 <Grid item container xs={2} md={2} justifyContent="center" alignItems="center">
-                    <img src="/assets/Group (6).png"/>
+                    <img src="/assets/Group (6).png" alt=""/>
                 </Grid>
                 <Grid item container xs={12} md={12}>
-                    <img src="/assets/Screenshot 2024-06-21 114830.png" style={{width: '100%'}}/>
+                    <img src="/assets/Screenshot 2024-06-21 114830.png" alt="" style={{width: '100%'}}/>
                 </Grid>               
 
             </Grid>
@@ -71,7 +70,7 @@ function Subscription() {
             <Grid container>
                 <Grid item container xs={12} md={12} justifyContent="center" alignItems="center">
                     <Grid className="pt-3" sx={{border: '1px solid #FFFCB1', backgroundColor: '#FFFCB1'}}>
-                        <p id="para3" style={{color: '#FF2323', fontSize: '25px', fontWeight: '600', }}><img src="/assets/Line 5.png" className="img-fluid"/>Price: ₹999 + GST per month<img src="/assets/Line 5.png" className="img-fluid"/></p>
+                        <p id="para3" style={{color: '#FF2323', fontSize: '25px', fontWeight: '600', }}><img src="/assets/Line 5.png" alt="" className="img-fluid"/>Price: ₹999 + GST per month<img src="/assets/Line 5.png" alt="" className="img-fluid"/></p>
                         <p className="text-center">Hurry! Grab this special offer before it’s gone! <br></br>Perfect for new members who want to experience the joy of ToyPebble at an unbeatable price.</p>
                     </Grid>
                 </Grid>
@@ -83,7 +82,7 @@ function Subscription() {
                 </Grid>
 
                 <Grid item container xs={2} md={2} justifyContent="center" alignItems="center" sx={{ display: {xs: 'none', sm: 'block'}}}>
-                    <img src="/assets/Group (7).png"/>
+                    <img src="/assets/Group (7).png" alt=""/>
                 </Grid>
                 <Grid item container xs={8} md={8} justifyContent="center" alignItems="center">
                     
@@ -92,7 +91,7 @@ function Subscription() {
                 
                 </Grid>               
                 <Grid item container xs={2} md={2} justifyContent="center" alignItems="center" sx={{ display: {xs: 'none', sm: 'block'}}}>
-                    <img src="/assets/Group (8).png"/>
+                    <img src="/assets/Group (8).png" alt=""/>
                 </Grid>
                 
             </Grid>
@@ -119,12 +118,9 @@ function Subscription() {
                 </Grid>               
             </Grid>
 
-            <Grid container justifyContent="center" alignItems="center" className="mt-5 pt-4" style={{backgroundColor: '#5891FF', color: '#FFF'}}>
-                <Grid item container xs={12} md={1}>
-                    <h1>NOTE</h1>
-                </Grid>
-                <Grid item container xs={12} md={7}>
-                    <p>Cancel Anytime: All our plans offer the flexibility to cancel your subscription whenever you want. For more detail, you can refer to our cancellation policy mentioned under terms and condition.</p>
+            <Grid container justifyContent="center" alignItems="center" className="mt-5" style={{backgroundColor: '#5891FF', color: '#FFF'}}>
+                <Grid item container xs={12} md={12} style={{ overflow: 'hidden' }}>
+                    <h3 class="floating-text pt-2 pb-2">NOTE:- &nbsp; Cancel Anytime: All our plans offer the flexibility to cancel your subscription whenever you want. For more detail, you can refer to our cancellation policy mentioned under terms and condition.</h3>
                 </Grid>
             </Grid>
 

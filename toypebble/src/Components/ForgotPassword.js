@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Button, Grid, FormControl, InputLabel, OutlinedInput, InputAdornment } from "@mui/material";
 import { EmailOutlined } from '@mui/icons-material';
-import MyNavbar from "./Navbar";
 import axios from 'axios';
 
 function ForgotPassword() {
@@ -14,12 +13,12 @@ function ForgotPassword() {
 
     try {
       const response = await axios.post(`${process.env.REACT_APP_PUBLIC_BASE_URL}/forgotpassword`, { email });
-      setSuccessMessage(response.data.msg);
+      setSuccessMessage(response.data.message);
       setError('');
       setEmail('');
     } catch (err) {
-      if (err.response && err.response.data && err.response.data.msg) {
-        setError(err.response.data.msg);
+      if (err.response && err.response.data && err.response.data.message) {
+        setError(err.response.data.message);
       } else {
         setError('Something went wrong. Please try again.');
       }
@@ -29,7 +28,6 @@ function ForgotPassword() {
 
   return (
     <div style={{ backgroundColor: '#F1DDC4', height: '100vh' }}>
-      <MyNavbar />
       <Grid container direction="row" style={{ backgroundColor: '#F1DDC4' }}>
         <Grid item xs={12} md={12} justifyContent="center" alignItems="center">
           <h1 className="text-center mt-3" style={{ color: '#000', fontSize: '3.5rem', fontWeight: '500' }}>FORGOT PASSWORD</h1>
@@ -39,8 +37,8 @@ function ForgotPassword() {
           <img src="/assets/Group (9).png" alt="" style={{ height: '270px' }} />
         </Grid>
 
-        <Grid item container md={4} >
-          <Grid item container xs={12} md={12}>
+        <Grid item container md={4} xs={12} justifyContent="center" alignItems="center">
+          <Grid item container xs={12} md={12} justifyContent="center" alignItems="center">
             <FormControl sx={{ m: 1 }} fullWidth variant="outlined">
               <InputLabel htmlFor="outlined-input-with-icon-adornment">Enter your email</InputLabel>
               <OutlinedInput
@@ -57,8 +55,12 @@ function ForgotPassword() {
                 sx={{ backgroundColor: '#FFF' }}
               />
             </FormControl>
+            
+            {error && <p style={{ color: 'red', textAlign: 'center' }}>{error}</p>}
+            {successMessage && <p style={{ color: 'green', textAlign: 'center' }}>{successMessage}</p>}
+            
           </Grid>
-
+         
           <Grid item container xs={12} md={12}>
             <Button
               variant="contained"
@@ -70,6 +72,8 @@ function ForgotPassword() {
             </Button>
           </Grid>
         </Grid>
+
+        
 
         <Grid container item md={4} justifyContent="end" alignItems="center">
           <img src="/assets/Group (10).png" alt="" style={{ height: '270px' }} />
@@ -83,8 +87,7 @@ function ForgotPassword() {
         </Grid>
       </Grid>
 
-      {error && <p style={{ color: 'red', textAlign: 'center', marginTop: '20px' }}>{error}</p>}
-      {successMessage && <p style={{ color: 'green', textAlign: 'center', marginTop: '20px' }}>{successMessage}</p>}
+      
     </div>
   );
 }

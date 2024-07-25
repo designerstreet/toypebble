@@ -32,8 +32,11 @@ function Checkout() {
   const ageGroup = searchParams.get('ageGroup');
   const plan = searchParams.get('plan');
 
-  const [name, setName] = useState('Mehul');
+  
   const [amount, setAmount] = useState(0);
+  const storedUser = JSON.parse(localStorage.getItem('user')) || {};
+  const email = storedUser.email || '';
+  const name = storedUser.parentname || '';
 
   useEffect(() => {
     // Fetch the amount based on the plan type
@@ -91,6 +94,8 @@ function Checkout() {
         // alert(response.razorpay_signature);
 
         await createOrder(response.razorpay_order_id, plan, ageGroup);
+        await sendOrderEmail(response.razorpay_order_id); // Call to send email after creating order
+
         // Navigate to the order page with order details
         navigate('/myOrders');
       },
@@ -131,6 +136,37 @@ function Checkout() {
       console.log('Order placed successfully:', data);
     } catch (error) {
       console.error('Error placing order:', error);
+    }
+  }
+
+  async function sendOrderEmail(orderId) {
+    const token = JSON.parse(localStorage.getItem('token')) || '';
+    const emailData = {
+      orderId,
+      plan,
+      ageGroup,
+      name,
+      email // Using actual user's email from context
+    };
+
+    try {
+      const response = await fetch(`${process.env.REACT_APP_PUBLIC_BASE_URL}/sendOrderEmail`, {
+        method: 'POST',
+        headers: {
+          'Authorization': `Bearer ${token}`,
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(emailData)
+      });
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      const data = await response.json();
+      console.log('Email sent successfully:', data);
+    } catch (error) {
+      console.error('Error sending email:', error);
     }
   }
 

@@ -10,15 +10,18 @@ import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import { Grid, Button, FormGroup, FormControlLabel, Checkbox } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
-import { useAuth } from '../AuthContext'; // Import useAuth hook
+import { useAuth } from '../AuthContext';
 
 export default function InputAdornments() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState('');
+  const [emailError, setEmailError] = useState('');
+  const [passwordError, setPasswordError] = useState('');
+  const [successMessage, setSuccessMessage] = useState('');
   const navigate = useNavigate();
-  const { login } = useAuth(); // Get login function from useAuth
+  const { login } = useAuth();
 
   const handleClickShowPassword = () => setShowPassword((show) => !show);
 
@@ -26,7 +29,28 @@ export default function InputAdornments() {
     event.preventDefault();
   };
 
+  const validateInputs = () => {
+    let isValid = true;
+    if (!email) {
+      setEmailError('Email is required');
+      isValid = false;
+    } else {
+      setEmailError('');
+    }
+    if (!password) {
+      setPasswordError('Password is required');
+      isValid = false;
+    } else {
+      setPasswordError('');
+    }
+    return isValid;
+  };
+
   const handleLogin = async () => {
+    if (!validateInputs()) {
+      return;
+    }
+
     try {
       const response = await fetch(`${process.env.REACT_APP_PUBLIC_BASE_URL}/login`, {
         method: 'POST',
@@ -38,31 +62,24 @@ export default function InputAdornments() {
 
       if (!response.ok) {
         const errorData = await response.json();
-        throw new Error(errorData.msg || 'Login failed');
+        throw new Error(errorData.message || 'Login failed');
       }
 
       const data = await response.json();
-      console.log('Backend Response:', data); // Debug log
-     
-      // Handle successful login
-      console.log('Login successful:', data);
+      console.log('Backend Response:', data);
 
-      const userData = data.newUser || data.user;
-      localStorage.setItem(
-        "token",
-        JSON.stringify(data.token)
-      );
-      localStorage.setItem(
-        "user",
-        JSON.stringify(userData)
-      );
+      const userData = data.user;
+      localStorage.setItem("token", JSON.stringify(data.token));
+      localStorage.setItem("user", JSON.stringify(userData));
       
-
+      setSuccessMessage('Login successful!');
+      setError('');
       
-      login(); // Set the user as authenticated
-      navigate('/subscription'); // Redirect to subscription page
+      login();
+      navigate('/subscription');
     } catch (error) {
       setError(error.message);
+      setSuccessMessage('');
     }
   };
 
@@ -82,6 +99,7 @@ export default function InputAdornments() {
             }
             label="Username"
           />
+          {emailError && <FormHelperText error>{emailError}</FormHelperText>}
         </FormControl>
       </Grid>
       <Grid item xs={12}>
@@ -106,11 +124,17 @@ export default function InputAdornments() {
             }
             label="Password"
           />
+          {passwordError && <FormHelperText error>{passwordError}</FormHelperText>}
         </FormControl>
       </Grid>
       {error && (
         <Grid item xs={12}>
           <FormHelperText error>{error}</FormHelperText>
+        </Grid>
+      )}
+      {successMessage && (
+        <Grid item xs={12}>
+          <FormHelperText>{successMessage}</FormHelperText>
         </Grid>
       )}
       <Grid container direction="row">
