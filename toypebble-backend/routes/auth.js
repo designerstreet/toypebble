@@ -148,7 +148,7 @@ router.post('/forgotpassword', async (req, res) => {
     user.resetTokenExpiry = resetTokenExpiry;
     await user.save();
 
-    const resetLink = `${process.env.LOCAL_FRONTEND_APP}/#/resetPassword/?token=${resetToken}`;
+    const resetLink = `${process.env.REMOTE_FRONTEND_APP}/#/resetPassword/?token=${resetToken}`;
 
     const options = {
       email,
