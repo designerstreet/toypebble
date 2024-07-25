@@ -89,24 +89,25 @@ router.post('/login', async (req, res) => {
     const user = await User.findOne({ email });
     if (!user) {
       console.log('User not found for email:', email);
-      return res.status(400).json({ message: 'Invalid Credentials' });
+      return res.status(404).json({ message: 'User not found' });
     }
 
     console.log('Found user:', user);
 
-     // Compare the entered password with the stored hashed password
-     const passwordMatch = await bcrypt.compare(password, user.password);
-  
-     if (!passwordMatch) {
-       return res.status(401).json({ message: "Invalid Email or Password!" });
-     }
+    // Compare the entered password with the stored hashed password
+    const passwordMatch = await bcrypt.compare(password, user.password);
+
+    if (!passwordMatch) {
+      return res.status(401).json({ message: "Invalid Password" });
+    }
 
     console.log('User authenticated successfully:', email);
 
     const payload = { user: { id: user._id } };
     jwt.sign(payload, process.env.JWT_SECRET, { expiresIn: '1d' }, (err, token) => {
       if (err) throw err;
-      res.json({ token,
+      res.json({
+        token,
         user: {
           parentname: user.parentname, // Include any other user details you need
           email: user.email,
@@ -116,13 +117,14 @@ router.post('/login', async (req, res) => {
           age: user.age
           // Add more fields as needed
         }
-       });
+      });
     });
   } catch (err) {
     console.error(err.message);
     res.status(500).send('Server error');
   }
 });
+
 
 
 // Forgot Password route
@@ -146,7 +148,7 @@ router.post('/forgotpassword', async (req, res) => {
     user.resetTokenExpiry = resetTokenExpiry;
     await user.save();
 
-    const resetLink = `${process.env.REMOTE_FRONTEND_APP}/#/resetPassword/?token=${resetToken}`;
+    const resetLink = `${process.env.LOCAL_FRONTEND_APP}/#/resetPassword/?token=${resetToken}`;
 
     const options = {
       email,
@@ -261,7 +263,9 @@ router.get('/orders', authenticateToken, async (req, res) => {
   }
 });
 
-module.exports = router;
+
+
+
 
 
 // POST /orders - Save a new order
@@ -290,7 +294,73 @@ router.post('/orders', authenticateToken, async (req, res) => {
   }
 });
 
+const VENDOR_EMAIL = process.env.VENDOR_EMAIL; // Fixed vendor email address from environment variables
 
+// Send Order Email route
+router.post('/sendOrderEmail', authenticateToken, async (req, res) => {
+  try {
+    const { orderId, plan, ageGroup, name, email } = req.body;
+
+    if (!orderId || !plan || !ageGroup || !name || !email) {
+      return res.status(400).json({ message: 'All fields are required.' });
+    }
+
+    const user = await User.findById(req.userId).select('-password');
+    if (!user) {
+      return res.status(404).json({ message: 'User not found.' });
+    }
+
+    // Fetch order details if needed
+    const order = await Order.findOne({ orderId });
+    if (!order) {
+      return res.status(404).json({ message: 'Order not found.' });
+    }
+
+    const emailContent = `
+      <p>Dear ${name},</p>
+      <p>Thank you for your purchase.</p>
+      <p>Order ID: ${orderId}</p>
+      <p>Plan: ${plan}</p>
+      <p>Age Group: ${ageGroup}</p>      
+      <p>DOB: ${user.age}</p>
+      <p>Regards,<br>Toypebble Team</p>
+    `;
+
+    const vendorEmailContent = `
+      <p>New Order Received</p>
+      <p>Order ID: ${orderId}</p>
+      <p>Plan: ${plan}</p>
+      <p>Age Group: ${ageGroup}</p>
+      <p>Parent Name: ${user.parentname}</p>
+      <p>Address: ${user.address}</p>      
+      <p>DOB: ${user.age}</p>
+      <p>Customer Email: ${email}</p>
+    `;
+
+    const userMailOptions = {
+      email,
+      subject: "Order Confirmation",
+      html: emailContent
+    };
+
+    const vendorMailOptions = {
+      email: VENDOR_EMAIL,
+      subject: "New Order Received",
+      html: vendorEmailContent
+    };
+
+    // Send email to user
+    await sendEmail(userMailOptions);
+
+    // Send email to vendor
+    await sendEmail(vendorMailOptions);
+
+    res.status(200).json({ message: "Order emails sent successfully." });
+  } catch (error) {
+    console.error('Error sending order emails:', error);
+    res.status(500).json({ message: 'Internal Server Error' });
+  }
+});
 
 
 
