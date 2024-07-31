@@ -23,9 +23,9 @@ const razorpay = new Razorpay({
 
 // Define subscription plans
 const subscriptionPlans = {
-  basic: 999,
+  basic: 1199,
   standard: 1099,
-  premium: 1199,
+  premium: 999,
 };
 
 
@@ -218,12 +218,14 @@ router.post('/razorpay', async (req, res) => {
   }
 
   const amount = subscriptionPlans[planType];
+  const gstAmount = amount * 0.18;
+  const totalAmount = amount + gstAmount;
 	const payment_capture = 1
 	
 	const currency = 'INR'
 
 	const options = {
-		amount: amount * 100,
+		amount: totalAmount * 100,
 		currency,
 		receipt: shortid.generate(),
 		payment_capture
@@ -362,6 +364,37 @@ router.post('/sendOrderEmail', authenticateToken, async (req, res) => {
   }
 });
 
+
+// New sendContactEmail route
+router.post('/sendContactEmail', async (req, res) => {
+  try {
+    const { name, email, contactNo, message } = req.body;
+
+    if (!name || !email || !contactNo || !message) {
+      return res.status(400).json({ message: 'All fields are required.' });
+    }
+
+    const emailContent = `
+      <p>Name: ${name}</p>
+      <p>Email: ${email}</p>
+      <p>Contact No: ${contactNo}</p>
+      <p>Message: ${message}</p>
+    `;
+
+    const mailOptions = {
+      email: process.env.VENDOR_EMAIL, // Replace with the recipient's email address
+      subject: 'Contact Form Submission',
+      html: emailContent
+    };
+
+    await sendEmail(mailOptions);
+
+    res.status(200).json({ message: 'Email sent successfully!' });
+  } catch (error) {
+    console.error('Error sending contact form email:', error);
+    res.status(500).json({ message: 'Internal Server Error' });
+  }
+});
 
 
 
