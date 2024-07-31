@@ -1277,253 +1277,253 @@ export const titlesAndDescriptions = {
           0: { // Set 1
               titles: [
                 '',
-                'Workbench with Accessories',
-                'Funskool - Activity Walker',
-                'Toddlers Foam Book: ABC',
-                'Flash Cards'
+                'Plastic Cricket Set',
+                'Miniature Hockey Game',
+                'Grand Amar Chitra Katha',
+                'Skillmatics Rapid Rumble'
               ],
               descriptions: [
                 <ul>
-                  <li>Workbench with Accessories</li>
-                  <li>Funskool - Activity Walker</li>
-                  <li>Toddlers Foam Book: ABC</li>
-                  <li>Flash Cards</li>
+                  <li>Plastic Cricket Set</li>
+                  <li>Miniature Hockey Game</li>
+                  <li>Grand Amar Chitra Katha</li>
+                  <li>Skillmatics Rapid Rumble</li>
                 </ul>,
-                'Workbench with Accessories: Colorful, interactive toy for toddlers aged 12 months and up, promoting development of motor skills and problem-solving through imaginative play.',
-                'Wooden activity walker combines sit-up play and walking fun with features like xylophone, bead moving, block spinning, animal sliding, and maze exploring for toddlers.',
-                'Toddlers Foam Book : ABC - designed to educate and entertain young children with vibrant illustrations and interactive learning activities.',
-                'Flash Cards: Ideal early learning tool for children aged 1-6, promoting visual, auditory, and kinesthetic learning while being water and scratch-resistant.'
+                "Kickstart your child's cricket dreams with this specially designed set, promoting exercise and healthy habits from the start!",
+                'Air hockey game table for kids aged 6+, perfect for entertaining weekends at home with friends; quick assembly, promotes motor skills and competitive fun.',
+                "Explore India's diverse storytelling heritage with the Grand Amar Chitra Katha Collection, featuring a monthly installment of twelve captivating titles from mythology, folklore, and history.",
+                'Fast-paced category game for family fun: Rapid Rumble SUPER PACK includes 160 Category Cards and 200 Letter Cards, perfect for parties and game nights with 2-10 players aged 6+.'
               ]
           },
           1: { // Set 2
               titles: [
                 '',
-                'Under The Sea Shapes Puzzle',
-                'Funskool - Walk n Ride',
-                'Toddlers Foam Book: 123',
-                'Babyhug Sort n Play Wooden Shape Sorter 22 Pieces'
+                'Boats Building Blocks Kit',
+                'Skillmatics Sinking Stones Fun Strategy Game',
+                'Grand Amar Chitra Katha',
+                'Crossword'
               ],
               descriptions: [
                 <ul>
-                  <li>Under The Sea Shapes Puzzle</li>
-                  <li>Funskool - Walk n Ride</li>
-                  <li>Toddlers Foam Book: 123</li>
-                  <li>Babyhug Sort n Play Wooden Shape Sorter 22 Pieces</li>
+                  <li>Boats Building Blocks Kit</li>
+                  <li>Skillmatics Sinking Stones Fun Strategy Game</li>
+                  <li>Grand Amar Chitra Katha</li>
+                  <li>Crossword</li>
                 </ul>,
-                'An engaging undersea-themed puzzle introduces basic shapes, offering multiple uses from shape sorting and nesting to imaginative play, enhancing hand-eye coordination and motor skills.',
-                'A versatile walker-trike combo that supports early steps and easily converts into a ride-on trike as your child grows.',
-                'Toddlers Foam Book : 123 - designed to educate and entertain young children with vibrant illustrations and interactive learning activities.',
-                'Classic shape sorter toy features a football player design, with a sorting base and 22 wooden pieces in various colors and shapes, enhancing hand-eye coordination and motor skills in children.'
+                'Inspire creative play with a diverse range of bricks and special pieces, ideal for imaginative construction and compatible with existing sets.',
+                'Survive the sinking stones in this fast-paced and strategic board game by hopping off stones or using floats to stay afloat!',
+                "Explore India's diverse storytelling heritage with the Grand Amar Chitra Katha Collection, featuring a monthly installment of twelve captivating titles from mythology, folklore, and history.",
+                'A fun and educational word game for all ages, perfect for family gatherings and travel, featuring 100 letter tiles and easy-to-carry components.'
               ]
           },
           2: { // Set 3
               titles: [
                 '',
-                'At The Farm Peg Puzzle',
-                'Montessourrie Learning Machine',
-                'Toddlers Foam Book: Colours',
-                'PepPlay Stacking And Nesting Cube'
+                'Fighter Planes Building Blocks',
+                'Smartivity Electro Play Lab',
+                'Grand Amar Chitra Katha',
+                'Zephyr Dog And Bone Board Game'
               ],
               descriptions: [
                 <ul>
-                  <li>At The Farm Peg Puzzle</li>
-                  <li>Montessourrie Learning Machine</li>
-                  <li>Toddlers Foam Book: Colours</li>
-                  <li>PepPlay Stacking And Nesting Cube</li>
+                  <li>Fighter Planes Building Blocks</li>
+                  <li>Smartivity Electro Play Lab</li>
+                  <li>Grand Amar Chitra Katha</li>
+                  <li>Zephyr Dog And Bone Board Game</li>
                 </ul>,
-                'Farm-themed puzzle enhances fine motor skills and hand-eye coordination in children while introducing them to farm animals.',
-                'Creative Montessori early learning toys that enhance creativity, concentration, hand-eye coordination, and motor skills with 5 educational themes in 1 durable and safe set.',
-                'Toddlers Foam Book : Colours - designed to educate and entertain young children with vibrant illustrations and interactive learning activities.',
-                'Colorful and sturdy stackable/nestable cardboard blocks featuring animals, shapes, numbers, colors, and puzzles, fostering early learning through building and nesting activities.'
+                'Inspire open-ended creativity with colorful bricks, special pieces, and limitless construction possibilities for ages 5+.',
+                'Engaging STEM kit for kids 6-12 years, featuring 8+ activities on conductivity with real moving parts, promoting screen-free fun and cognitive development.',
+                "Explore India's diverse storytelling heritage with the Grand Amar Chitra Katha Collection, featuring a monthly installment of twelve captivating titles from mythology, folklore, and history.",
+                'Strategy game enhancing memory, dexterity, reasoning with dogs, bones, fences on a board; rules support multilingual instructions'
               ]
           },
           3: { // Set 4
               titles: [
                 '',
-                'Giggles Fire Engine',
-                'HAPPY HUES Intelligent Cart Toy',
-                'Toddlers Foam Book- Shapes',
-                'Classic Animal Blocks Zenga'
+                'Skillmatics Strike 7 Outdoor Game',
+                'Magnetic Chess Board',
+                'Grand Amar Chitra Katha',
+                '2 in 1 Catapult Shooter'
               ],
               descriptions: [
                 <ul>
-                  <li>Giggles Fire Engine</li>
-                  <li>HAPPY HUES Intelligent Cart Toy</li>
-                  <li>Toddlers Foam Book- Shapes</li>
-                  <li>Classic Animal Blocks Zenga</li>
+                  <li>Skillmatics Strike 7 Outdoor Game</li>
+                  <li>Magnetic Chess Board</li>
+                  <li>Grand Amar Chitra Katha</li>
+                  <li>2 in 1 Catapult Shooter</li>
                 </ul>,
-                'Fire Engine activity toy with lights and sound for little hands to race to the scene and extinguish fires at playtime.',
-                'Our Wooden Shape Intelligent Cart combines shape sorting and imaginative play with high-quality wooden pieces, fostering cognitive skills and hand-eye coordination in children aged 2 and up.',
-                'Toddlers Foam Book : Shapes - designed to educate and entertain young children with vibrant illustrations and interactive learning activities.',
-                'Innovative stacking game for kids with colorful animal blocks and dice, promoting hand-eye coordination and fine motor skills in a safe, educational play environment.'
+                'Exciting outdoor game involving tower stacking, dodging balls, and quick teamwork to score points, perfect for family fun and developing key skills.',
+                'High-quality wooden chess set, portable with brass lock, ideal for all ages and skill levels; challenge your brain and your opponent in classic strategy gameplay.',
+               "Explore India's diverse storytelling heritage with the Grand Amar Chitra Katha Collection, featuring a monthly installment of twelve captivating titles from mythology, folklore, and history.",
+                'Educational DIY toy combining catapult and Arrow Ball Shooter for action-packed outdoor play, teaching scientific concepts of force through imaginative warfare scenarios.'
               ]
           },
           4: { // Set 5
               titles: [
                 '',
-                'Giggles Rescue Ambulance',
-                'Activity Cube',
-                "Sawan Toddler's Board Book",
-                "Giggles Link Stack N Nest Toy Set"
+                'Funskool Strike 4',
+                'Expert Mechanical Game',
+                "Grand Amar Chitra Katha",
+                "The Science Adventure Wooden Game"
               ],
               descriptions: [
                 <ul>
-                  <li>Giggles Rescue Ambulance</li>
-                  <li>Activity Cube</li>
-                  <li>Sawan Toddler's Board Book</li>
-                  <li>Giggles Link Stack N Nest Toy Set</li>
+                  <li>Funskool Strike 4</li>
+                  <li>Expert Mechanical Game</li>
+                  <li>Grand Amar Chitra Katha</li>
+                  <li>The Science Adventure Wooden Game</li>
                 </ul>,
-                'Rescue Ambulance toy with lights and sound, perfect for imaginative play as kids race to transport patients to safety with realistic siren effects.',
-                'Explore and learn with a multi-activity cube featuring colors, numbers, animals, and more, fostering critical skills development in children.',
-                'Vibrant board books with engaging images for fast absorption of information, ideal for teaching and gifting to pre-preschoolers and toddlers. (Any one book)',
-                'Link Stack N Nest Toy Set enhances color recognition, matching skills, and fine motor development through stackable and nestable blocks with circular stabilizers for creative play.'
+                'A super simple, two-player disc dropping game fostering strategic thinking and social skills by blocking opponents from forming four in a row.',
+                'Interactive STEM construction toy for kids, featuring 20-in-1 engineering models to inspire scientific curiosity and creativity in children aged 10 and up.',
+              "Explore India's diverse storytelling heritage with the Grand Amar Chitra Katha Collection, featuring a monthly installment of twelve captivating titles from mythology, folklore, and history.",
+                "Interactive science adventure board game enhances children's mental capability and science interest through engaging play."
               ]
           },
           5: { // Set 6
               titles: [
                 '',
-                'Babyhug Musical Activity Bus',
-                'Funskool - My First Pony, Ride On Toy',
-                "Sawan Toddler's Board Book",
-                'Multi Model Blocks Building'
+                'Funskool Games Topple',
+                'Mechanical Robot models',
+                "Grand Amar Chitra Katha",
+                'Brain Board Game'
               ],
               descriptions: [
                 <ul>
-                  <li>Babyhug Musical Activity Bus</li>
-                  <li>Funskool - My First Pony, Ride On Toy</li>
-                  <li>Sawan Toddler's Board Book</li>
-                  <li>Multi Model Blocks Building</li>
+                  <li>Funskool Games Topple</li>
+                  <li>Mechanical Robot models</li>
+                  <li>Grand Amar Chitra Katha</li>
+                  <li>Brain Board Game</li>
                 </ul>,
-                'Harmony Express Babyhug Musical Toy Bus offers interactive play with learning, music, and quiz modes, igniting young imaginations with cheerful tunes and melodies.',
-                'My First Pony Ride-On toy enhances motor skills and sense of direction with front and back movement, providing safe and engaging indoor fun for toddlers.',
-                'Vibrant board books with engaging images for fast absorption of information, ideal for teaching and gifting to pre-preschoolers and toddlers. (Any one book)',
-                'Little building blocks set fosters creativity and shapes learning through open-ended building play for young children.'
+                'A strategic balancing and skill game where players aim to complete rows of five while stacking pieces high; ideal for kids aged 6 to 10.',
+                'Robotic kit introduces robotics to kids with design projects, fostering creativity, problem-solving, and fine motor skills development.',
+                "Explore India's diverse storytelling heritage with the Grand Amar Chitra Katha Collection, featuring a monthly installment of twelve captivating titles from mythology, folklore, and history.",
+                'A brain-boosting memory game for children that enhances focus, concentration, and cognitive skills through challenging gameplay with coins and picture matching.'
               ]
           },
           6: { // Set 7
               titles: [
                 '',
-                'Pull Along Xylophone',
-                'Foldable Garden Baby Slider',
-               "Sawan Toddler's Board Book",
-                'Shape Sorter Montessori Educational Toys'
+                'Click and Catch Twin Ball Launcher Game',
+                'Wooden Carrom Board',
+               "Grand Amar Chitra Katha",
+                'Cars Mechanical Game'
               ],
               descriptions: [
                 <ul>
-                  <li>Pull Along Xylophone</li>
-                  <li>Foldable Garden Baby Slider</li>
-                  <li>Sawan Toddler's Board Book</li>
-                  <li>Shape Sorter Montessori Educational Toys</li>
+                  <li>Click and Catch Twin Ball Launcher Game</li>
+                  <li>Wooden Carrom Board</li>
+                  <li>Grand Amar Chitra Katha</li>
+                  <li>Cars Mechanical Game</li>
                 </ul>,
-                "Friendly character pull-along toy promotes hand-eye coordination and musical exploration, ideal as a child's first instrument.",
-                'Durable plastic slide for kids, offering a safe and exciting adventure with easy assembly and portability.',
-                'Vibrant board books with engaging images for fast absorption of information, ideal for teaching and gifting to pre-preschoolers and toddlers. (Any one book)',
-                'Colorful and durable shape sorter toy for toddlers, promoting tactile exploration and fine motor skills development with easy-to-handle shapes and robust construction.'
+                "Fun indoor/outdoor toy includes 2 catch ball cup holders, 3 plastic balls; perfect family fun for kids aged 3 and up.",
+                'Smooth playing surface, excellent rebound capabilities, and sturdy reinforcement for flatness, ideal for family and friends for hours of fun with this superior finish plastic carrom board.',
+                "Explore India's diverse storytelling heritage with the Grand Amar Chitra Katha Collection, featuring a monthly installment of twelve captivating titles from mythology, folklore, and history.",
+                "M'Tek STEM models inspire creativity and skill development in science, technology, engineering, and mathematics, fostering early interest and preparing children for future success."
               ]
           },
           7: { // Set 8
               titles: [
                 '',
-                'Wooden Puzzle with Knobs',
-                'Little Genius Wooden Shapes Stacking Truck',
-                "Sawan Toddler's Board Book",
-                'Blocks Learning Numbers'
+                '10 in 1 Classic Board Games',
+                'Wobble Board',
+                "Grand Amar Chitra Katha",
+                'Spaceship STEM Multimodel Building Set'
               ],
               descriptions: [
                 <ul>
-                  <li>Wooden Puzzle with Knobs</li>
-                  <li>Little Genius Wooden Shapes Stacking Truck</li>
-                  <li>Sawan Toddler's Board Book</li>
-                  <li>Blocks Learning Numbers</li>
+                  <li>10 in 1 Classic Board Games</li>
+                  <li>Wobble Board</li>
+                  <li>Grand Amar Chitra Katha</li>
+                  <li>Spaceship STEM Multimodel Building Set</li>
                 </ul>,
-                'Wooden educational puzzle featuring Shapes, Animals, Alphabets, and Fruits promotes learning through play, enhancing hand-eye coordination and problem-solving skills.',
-                'Wooden multi-colored shape sorter with various shapes and colors, promoting cognitive growth, color and shape recognition, hand-eye coordination, and creative play in children.`',
-                'Vibrant board books with engaging images for fast absorption of information, ideal for teaching and gifting to pre-preschoolers and toddlers. (Any one book)',
-                'Blocks Learning Numbers offer endless building possibilities for children, fostering creativity and constructive play with safe, non-toxic materials.'
+                'A comprehensive collection of engaging board games for kids, fostering quick decision-making, strategic thinking, and problem-solving skills with colorful design and diverse gameplay options.',
+                'The Wobble Board Fun Balancing Game challenges and improves balance and coordination with its specially designed tilting platform.',
+                "Explore India's diverse storytelling heritage with the Grand Amar Chitra Katha Collection, featuring a monthly installment of twelve captivating titles from mythology, folklore, and history.",
+                'Little builders enjoy creative play and enhance skills with colorful blocks, rods, and connectors to construct 4 different aircraft models, promoting hand-eye coordination and spatial thinking.'
               ]
           },
           8: { // Set 9
               titles: [
                 '',
-                'Tower Ball Drop Spinning Toy',
-                'Giggles Wooden Ramp Racer',
-                "Sawan Toddler's Board Book",
-                'Talking Flash Cards Toy'
+                'PICNARY Educational Board Game',
+                'Sling Puck Board Game',
+                "Grand Amar Chitra Katha",
+                'PictureKa'
               ],
               descriptions: [
                 <ul>
-                  <li>Tower Ball Drop Spinning Toy</li>
-                  <li>Giggles Wooden Ramp Racer</li>
-                  <li>Sawan Toddler's Board Book</li>
-                  <li>Talking Flash Cards Toy</li>
+                  <li>PICNARY Educational Board Game</li>
+                  <li>Sling Puck Board Game</li>
+                  <li>Grand Amar Chitra Katha</li>
+                  <li>PictureKa</li>
                 </ul>,
-                "Baby's First Blocks: Enhances motor skills and early learning through color sorting and shape matching activities, fostering coordination and cognitive development.",
-                'Wooden Ramp Racer set sparks racing excitement as cars flip down ramps, delighting children with each thrilling roll.',
-                'Vibrant board books with engaging images for fast absorption of information, ideal for teaching and gifting to pre-preschoolers and toddlers. (Any one book)',
-                'Interactive Talking Flash Card device with 224 double-sided cards covering various categories, fostering independent learning and speech therapy for kids.'
+                "A versatile and educational drawing game for 2+ players, perfect for family game nights, enhancing drawing skills, vocabulary, image recognition, and lateral thinking through fun gameplay.",
+                'A fun and durable tabletop hockey game with 10 strikers, made in India, perfect for family fun with solid wood frame and eco-friendly materials.',
+                "Explore India's diverse storytelling heritage with the Grand Amar Chitra Katha Collection, featuring a monthly installment of twelve captivating titles from mythology, folklore, and history.",
+                'A fast-paced picture hunt game for family fun, enhancing memory and coordination, where players race to find objects to win mission cards and laughter-filled excitement.'
               ]
           },
           9: { // Set 10
               titles: [
                 '',
-                'Multi Building Blocks',
-                'Wooden Magnetic Alphabet Number Train',
-                "Sawan Toddler's Board Book",
-                'Learning Pillow Book'
+                'Ratnas Jazz Drum Set',
+                'Badminton Set',
+                "Grand Amar Chitra Katha",
+                'Light and Sound Activity Kit'
               ],
               descriptions: [
                 <ul>
-                  <li>Multi Building Blocks</li>
-                  <li>Wooden Magnetic Alphabet Number Train</li>
-                  <li>Sawan Toddler's Board Book</li>
-                  <li>Learning Pillow Book</li>
+                  <li>Ratnas Jazz Drum Set</li>
+                  <li>Badminton Set</li>
+                  <li>Grand Amar Chitra Katha</li>
+                  <li>Light and Sound Activity Kit</li>
                 </ul>,
-                "Little building blocks inspire creativity and imagination, promoting open-ended play and enhancing children's thinking abilities and creativity.",
-                'Wooden number train set promotes counting, imagination, and cognitive skills with durable, eco-friendly construction and easy assembly.',
-                'Vibrant board books with engaging images for fast absorption of information, ideal for teaching and gifting to pre-preschoolers and toddlers. (Any one book)',
-                'Fun and educational personalized learning pillow for kids, featuring alphabets, numbers, and various subjects in multiple languages, ideal for early learning and room decor.'
+                "Ratnas presents a stylish Drum Set, ideal for young musicians to learn music skills and enjoy home concerts, complete with drum set and stool.",
+                'Pine Kids offers durable badminton racquets and skipping ropes for active outdoor fun, ensuring sturdy performance and comfort for players of all ages.',
+                "Explore India's diverse storytelling heritage with the Grand Amar Chitra Katha Collection, featuring a monthly installment of twelve captivating titles from mythology, folklore, and history.",
+                "Genius Box 'Light and Sound' kit engages children in hands-on experiments exploring fundamental concepts of light and sound, fostering scientific inquiry and skill development."
               ]
           },
           10: { // Set 11
               titles: [
                 '',
-                'Montessori Slide Puzzle',
-                'Music Jam Play Mat Toy',
-                "Sawan Toddler's Board Book",
-                'Chocozone Wooden Learning Puzzle'
+                'Brainvita',
+                'LEGO Cyber Drone Building Set',
+                "Grand Amar Chitra Katha",
+                'Percentages Wooden Board Puzzle'
               ],
               descriptions: [
                 <ul>
-                  <li>Montessori Slide Puzzle</li>
-                  <li>Music Jam Play Mat Toy</li>
-                  <li>Sawan Toddler's Board Book</li>
-                  <li>Chocozone Wooden Learning Puzzle</li>
+                  <li>Brainvita</li>
+                  <li>LEGO Cyber Drone Building Set</li>
+                  <li>Grand Amar Chitra Katha</li>
+                  <li>Percentages Wooden Board Puzzle</li>
                 </ul>,
-                'Colorful and safe shape sorting toy box promotes fine motor skills and hand-eye coordination in children.',
-                'Musical 2-in-1 Piano and Drum Play Mat Toy offers interactive musical exploration with 8 instrument sounds, 24 key buttons, record/playback feature, and built-in melodies for creative play and skill development.',
-                'Vibrant board books with engaging images for fast absorption of information, ideal for teaching and gifting to pre-preschoolers and toddlers. (Any one book)',
-                'Alphabet and Number Puzzles: Educational tools fostering fine motor skills, creativity, and curiosity in young learners.'
+                "Elevate concentration and strategic thinking with Brainvita Board Game's pearl finish marbles, perfect for enhancing problem-solving skills.",
+                'Cyber drone, cyber mech, and cyber scooter, featuring a robot minifigure for thrilling space adventures.',
+                "Explore India's diverse storytelling heritage with the Grand Amar Chitra Katha Collection, featuring a monthly installment of twelve captivating titles from mythology, folklore, and history.",
+                'Enhance cognitive skills with this non-toxic, high-quality puzzle set that promotes screen-free fun and learning.'
               ]
           },
           11: { // Set 12
               titles: [
                 '',
-                'Dinosaur Wooden Abacus',
-                'Babyhug Mega Brix Stack & Fix Set',
-                "Sawan Toddler's Board Book",
-                'Babyhug Soft Stacking Cube'
+                'Big Ouch Game',
+                'Lego Ninja Race Car',
+                "Grand Amar Chitra Katha",
+                'Kaleidoscope Projectors Toys'
               ],
               descriptions: [
                 <ul>
-                  <li>Dinosaur Wooden Abacus</li>
-                  <li>Babyhug Mega Brix Stack & Fix Set</li>
-                  <li>Sawan Toddler's Board Book</li>
-                  <li>Babyhug Soft Stacking Cube</li>
+                  <li>Big Ouch Game</li>
+                  <li>Lego Ninja Race Car</li>
+                  <li>Grand Amar Chitra Katha</li>
+                  <li>Kaleidoscope Projectors Toys</li>
                 </ul>,
-                'Classic wooden abacus toy, fostering early math skills, fine motor development, and educational play with colorful, non-toxic beads.',
-                'Colorful building blocks set fosters imagination and teaches gestalt psychology concepts through creative structure formation.',
-               'Vibrant board books with engaging images for fast absorption of information, ideal for teaching and gifting to pre-preschoolers and toddlers. (Any one book)',
-                'Adorable, non-toxic soft toy for endless fun-filled play and learning, crafted with care from the finest materials.'
+                'A suspenseful marble-dropping game requiring steady hands and concentration, perfect for multiple players of all ages.',
+                'Unleash fast-paced ninja action with LEGO NINJAGO set. Includes Kai minifigure with golden katana, an opening cockpit, and a transformable vehicle with an impressive golden wing spoiler.',
+               "Explore India's diverse storytelling heritage with the Grand Amar Chitra Katha Collection, featuring a monthly installment of twelve captivating titles from mythology, folklore, and history.",
+                'A timeless kaleidoscope creating multiple patterns, ideal for all ages featuring toys, games, educational items, and more to enhance focus, concentration, and brain development.'
               ]
           },
     },
@@ -1531,253 +1531,253 @@ export const titlesAndDescriptions = {
         0: { // Set 1
             titles: [
               '',
-              'Workbench with Accessories',
-              'Funskool - Activity Walker',
-              'Toddlers Foam Book: ABC',
-              'Flash Cards'
+              'Uno Flip',
+              'Zephyr Mechanix Robotix',
+              'Harry Potter Story Books',
+              'Skillmatics Science Kit Space'
             ],
             descriptions: [
               <ul>
-                <li>Workbench with Accessories</li>
-                <li>Funskool - Activity Walker</li>
-                <li>Toddlers Foam Book: ABC</li>
-                <li>Flash Cards</li>
+                <li>Uno Flip</li>
+                <li>Zephyr Mechanix Robotix</li>
+                <li>Harry Potter Story Books</li>
+                <li>Skillmatics Science Kit Space</li>
               </ul>,
-              'Workbench with Accessories: Colorful, interactive toy for toddlers aged 12 months and up, promoting development of motor skills and problem-solving through imaginative play.',
-              'Wooden activity walker combines sit-up play and walking fun with features like xylophone, bead moving, block spinning, animal sliding, and maze exploring for toddlers.',
-              'Toddlers Foam Book : ABC - designed to educate and entertain young children with vibrant illustrations and interactive learning activities.',
-              'Flash Cards: Ideal early learning tool for children aged 1-6, promoting visual, auditory, and kinesthetic learning while being water and scratch-resistant.'
+              'Experience Uno Flip, a dynamic twist on the classic matching game with a double-sided deck and strategic new action cards for competitive gameplay.',
+              'Mechanix Make It Yourself construction set fosters creativity and logical thinking while developing cognitive skills through car building fun.',
+              "Experience the magical journey of Harry Potter through J.K. Rowling's Complete Collection, featuring one book each month.",
+              'Explore space with 70+ interactive, double-sided cards that make learning fun and engaging for curious minds aged 7 and up.'
             ]
         },
         1: { // Set 2
             titles: [
               '',
-              'Under The Sea Shapes Puzzle',
-              'Funskool - Walk n Ride',
-              'Toddlers Foam Book: 123',
-              'Babyhug Sort n Play Wooden Shape Sorter 22 Pieces'
+              'Phase 10 Card Game',
+              'Funskool Rummikub',
+              'Harry Potter Story Books',
+              'Skillmatics Science Kit The Human Body '
             ],
             descriptions: [
               <ul>
-                <li>Under The Sea Shapes Puzzle</li>
-                <li>Funskool - Walk n Ride</li>
-                <li>Toddlers Foam Book: 123</li>
-                <li>Babyhug Sort n Play Wooden Shape Sorter 22 Pieces</li>
+                <li>Phase 10 Card Game</li>
+                <li>Funskool Rummikub</li>
+                <li>Harry Potter Story Books</li>
+                <li>Skillmatics Science Kit The Human Body </li>
               </ul>,
-              'An engaging undersea-themed puzzle introduces basic shapes, offering multiple uses from shape sorting and nesting to imaginative play, enhancing hand-eye coordination and motor skills.',
-              'A versatile walker-trike combo that supports early steps and easily converts into a ride-on trike as your child grows.',
-              'Toddlers Foam Book : 123 - designed to educate and entertain young children with vibrant illustrations and interactive learning activities.',
-              'Classic shape sorter toy features a football player design, with a sorting base and 22 wooden pieces in various colors and shapes, enhancing hand-eye coordination and motor skills in children.'
+              'A challenging rummy-style card game from the makers of Uno, where players race to complete 10 unique phases specific to each hand dealt.',
+              'A classic strategy game for 2-4 players, blending luck and skill to create runs and sets of numbered tiles, ideal for enhancing problem-solving and social skills.',
+              "Experience the magical journey of Harry Potter through J.K. Rowling's Complete Collection, featuring one book each month.",
+              'Explore the human body with interactive STEM cards, fostering learning and development of essential skills for curious kids aged 7 and up.'
             ]
         },
         2: { // Set 3
             titles: [
               '',
-              'At The Farm Peg Puzzle',
-              'Montessourrie Learning Machine',
-              'Toddlers Foam Book: Colours',
-              'PepPlay Stacking And Nesting Cube'
+              'Blink Card Game',
+              'Road Runners Mechanical Game',
+              'Harry Potter Story Books',
+              'Skillmatics India Map Puzzle'
             ],
             descriptions: [
               <ul>
-                <li>At The Farm Peg Puzzle</li>
-                <li>Montessourrie Learning Machine</li>
-                <li>Toddlers Foam Book: Colours</li>
-                <li>PepPlay Stacking And Nesting Cube</li>
+                <li>Blink Card Game</li>
+                <li>Road Runners Mechanical Game</li>
+                <li>Harry Potter Story Books</li>
+                <li>Skillmatics India Map Puzzle</li>
               </ul>,
-              'Farm-themed puzzle enhances fine motor skills and hand-eye coordination in children while introducing them to farm animals.',
-              'Creative Montessori early learning toys that enhance creativity, concentration, hand-eye coordination, and motor skills with 5 educational themes in 1 durable and safe set.',
-              'Toddlers Foam Book : Colours - designed to educate and entertain young children with vibrant illustrations and interactive learning activities.',
-              'Colorful and sturdy stackable/nestable cardboard blocks featuring animals, shapes, numbers, colors, and puzzles, fostering early learning through building and nesting activities.'
+              'Blink is a lightning-fast card game where players race to match shapes, counts, or colors to be the first to play all their cards.',
+              "M'Tek metal construction models promote STEM skills through hands-on learning, fostering creativity and preparing children for future success in science and engineering.",
+              "Experience the magical journey of Harry Potter through J.K. Rowling's Complete Collection, featuring one book each month.",
+              "Explore India's states, capitals, and over 300 fun facts with 70 pieces and educational cards, perfect for ages 6-12."
             ]
         },
         3: { // Set 4
             titles: [
               '',
-              'Giggles Fire Engine',
-              'HAPPY HUES Intelligent Cart Toy',
-              'Toddlers Foam Book- Shapes',
-              'Classic Animal Blocks Zenga'
+              'UNO',
+              'LEGO Creator Space Shuttle',
+              'Harry Potter Story Books',
+              'Skillmatics World Map Puzzle'
             ],
             descriptions: [
               <ul>
-                <li>Giggles Fire Engine</li>
-                <li>HAPPY HUES Intelligent Cart Toy</li>
-                <li>Toddlers Foam Book- Shapes</li>
-                <li>Classic Animal Blocks Zenga</li>
+                <li>UNO</li>
+                <li>LEGO Creator Space Shuttle</li>
+                <li>Harry Potter Story Books</li>
+                <li>Skillmatics World Map Puzzle</li>
               </ul>,
-              'Fire Engine activity toy with lights and sound for little hands to race to the scene and extinguish fires at playtime.',
-              'Our Wooden Shape Intelligent Cart combines shape sorting and imaginative play with high-quality wooden pieces, fostering cognitive skills and hand-eye coordination in children aged 2 and up.',
-              'Toddlers Foam Book : Shapes - designed to educate and entertain young children with vibrant illustrations and interactive learning activities.',
-              'Innovative stacking game for kids with colorful animal blocks and dice, promoting hand-eye coordination and fine motor skills in a safe, educational play environment.'
+              "UNO, a brilliant card game from Mattel, enhances children's interaction and strategic thinking, perfect for up to 10 players anytime, anywhere.",
+              'Build a Space Shuttle with satellite, astronaut figure with jetpack, or spaceship model, offering dynamic play for space enthusiasts aged 6+.',
+              "Experience the magical journey of Harry Potter through J.K. Rowling's Complete Collection, featuring one book each month.",
+              'Discover and learn about 100 countries with this educational 96-piece puzzle set, complete with country cards and over 400 fun facts, ideal for ages 6 to 12.'
             ]
         },
         4: { // Set 5
             titles: [
               '',
-              'Giggles Rescue Ambulance',
-              'Activity Cube',
-              "Sawan Toddler's Board Book",
-              "Giggles Link Stack N Nest Toy Set"
+              'Kids Car Track Set Build',
+              'LEGO Marvel',
+              "Harry Potter Story Books",
+              "Funskool Sum Genius"
             ],
             descriptions: [
               <ul>
-                <li>Giggles Rescue Ambulance</li>
-                <li>Activity Cube</li>
-                <li>Sawan Toddler's Board Book</li>
-                <li>Giggles Link Stack N Nest Toy Set</li>
+                <li>Kids Car Track Set Build</li>
+                <li>LEGO Marvel</li>
+                <li>Harry Potter Story Books</li>
+                <li>Funskool Sum Genius</li>
               </ul>,
-              'Rescue Ambulance toy with lights and sound, perfect for imaginative play as kids race to transport patients to safety with realistic siren effects.',
-              'Explore and learn with a multi-activity cube featuring colors, numbers, animals, and more, fostering critical skills development in children.',
-              'Vibrant board books with engaging images for fast absorption of information, ideal for teaching and gifting to pre-preschoolers and toddlers. (Any one book)',
-              'Link Stack N Nest Toy Set enhances color recognition, matching skills, and fine motor development through stackable and nestable blocks with circular stabilizers for creative play.'
+              'Create your own city with roads, buildings, and parks using this versatile car track set, fostering creativity and urban planning skills in kids.',
+              "Recreate Avengers action with motorcycles featuring side-shooters and accessories from Marvel Studios' Avengers: Age of Ultron, ideal for kids 6+.",
+              "Experience the magical journey of Harry Potter through J.K. Rowling's Complete Collection, featuring one book each month.",
+              'A strategic arithmetic challenge board game that enhances logical reasoning and arithmetic skills using 49 numbered tiles.'
             ]
         },
         5: { // Set 6
             titles: [
               '',
-              'Babyhug Musical Activity Bus',
-              'Funskool - My First Pony, Ride On Toy',
-              "Sawan Toddler's Board Book",
-              'Multi Model Blocks Building'
+              'Glow Race Track',
+              'LEGO Ninjago',
+              "Harry Potter Story Books",
+              'Einstein Box Ultimate Electricity Kit'
             ],
             descriptions: [
               <ul>
-                <li>Babyhug Musical Activity Bus</li>
-                <li>Funskool - My First Pony, Ride On Toy</li>
-                <li>Sawan Toddler's Board Book</li>
-                <li>Multi Model Blocks Building</li>
+                <li>Glow Race Track</li>
+                <li>LEGO Ninjago</li>
+                <li>Harry Potter Story Books</li>
+                <li>Einstein Box Ultimate Electricity Kit</li>
               </ul>,
-              'Harmony Express Babyhug Musical Toy Bus offers interactive play with learning, music, and quiz modes, igniting young imaginations with cheerful tunes and melodies.',
-              'My First Pony Ride-On toy enhances motor skills and sense of direction with front and back movement, providing safe and engaging indoor fun for toddlers.',
-              'Vibrant board books with engaging images for fast absorption of information, ideal for teaching and gifting to pre-preschoolers and toddlers. (Any one book)',
-              'Little building blocks set fosters creativity and shapes learning through open-ended building play for young children.'
+              'Safe, eco-friendly race car track set fosters creativity and cooperation skills in kids with high-quality, durable materials and a glowing electric lamp car for imaginative play.',
+              "Inspire ninja-themed adventures with LEGO NINJAGO Jay's Lightning Jet EVO, featuring a Jay minifigure and customizable upgrades for thrilling aerial play.",
+             "Experience the magical journey of Harry Potter through J.K. Rowling's Complete Collection, featuring one book each month.",
+              "Explore the world of electricity with Einstein Box's Ultimate Electricity Kit, sparking scientific curiosity and safe learning for kids aged 6 and up."
             ]
         },
         6: { // Set 7
             titles: [
               '',
-              'Pull Along Xylophone',
-              'Foldable Garden Baby Slider',
-             "Sawan Toddler's Board Book",
-              'Shape Sorter Montessori Educational Toys'
+              'Anti-Skid Yoga Mat',
+              'Edufields Tinker Lab: Electronic STEAM Toysr',
+             "Harry Potter Story Books",
+              'Sequence Number Board Game'
             ],
             descriptions: [
               <ul>
-                <li>Pull Along Xylophone</li>
-                <li>Foldable Garden Baby Slider</li>
-                <li>Sawan Toddler's Board Book</li>
-                <li>Shape Sorter Montessori Educational Toys</li>
+                <li>Anti-Skid Yoga Mat</li>
+                <li>Edufields Tinker Lab: Electronic STEAM Toys</li>
+                <li>Harry Potter Story Books</li>
+                <li>Sequence Number Board Game</li>
               </ul>,
-              "Friendly character pull-along toy promotes hand-eye coordination and musical exploration, ideal as a child's first instrument.",
-              'Durable plastic slide for kids, offering a safe and exciting adventure with easy assembly and portability.',
-              'Vibrant board books with engaging images for fast absorption of information, ideal for teaching and gifting to pre-preschoolers and toddlers. (Any one book)',
-              'Colorful and durable shape sorter toy for toddlers, promoting tactile exploration and fine motor skills development with easy-to-handle shapes and robust construction.'
+              "Kid-friendly exercise and yoga mat, with durable polyester-cotton yarn and anti-skid rubber latex backing.",
+              'Innovative Motor Machines: 20+ STEM Projects for Creative Learning & Fun!',
+              "Experience the magical journey of Harry Potter through J.K. Rowling's Complete Collection, featuring one book each month.",
+              'Match equations to answers, place chips, and aim for a sequence in this math-based board game'
             ]
         },
         7: { // Set 8
             titles: [
               '',
-              'Wooden Puzzle with Knobs',
-              'Little Genius Wooden Shapes Stacking Truck',
-              "Sawan Toddler's Board Book",
-              'Blocks Learning Numbers'
+              'LEGO Technic Snow Groomer',
+              'Monoply',
+              "Shakespeares Greatest Stories",
+              'Zephyr Metal Mechanix'
             ],
             descriptions: [
               <ul>
-                <li>Wooden Puzzle with Knobs</li>
-                <li>Little Genius Wooden Shapes Stacking Truck</li>
-                <li>Sawan Toddler's Board Book</li>
-                <li>Blocks Learning Numbers</li>
+                <li>LEGO Technic Snow Groomer</li>
+                <li>Monoply</li>
+                <li>Shakespeares Greatest Stories</li>
+                <li>Zephyr Metal Mechanix</li>
               </ul>,
-              'Wooden educational puzzle featuring Shapes, Animals, Alphabets, and Fruits promotes learning through play, enhancing hand-eye coordination and problem-solving skills.',
-              'Wooden multi-colored shape sorter with various shapes and colors, promoting cognitive growth, color and shape recognition, hand-eye coordination, and creative play in children.`',
-              'Vibrant board books with engaging images for fast absorption of information, ideal for teaching and gifting to pre-preschoolers and toddlers. (Any one book)',
-              'Blocks Learning Numbers offer endless building possibilities for children, fostering creativity and constructive play with safe, non-toxic materials.'
+              'Inspired by real vehicles, features moving tracks and shovel, transforms into a Snowmobile, perfect for imaginative play and skill development, ideal for kids aged 7+.',
+              'Monopoly Electronic Banking: Modern twist on classic board game with electronic cards for ages 8+, fast-paced property trading fun.',
+              "Explore Shakespeare's Greatest Stories with captivating retellings, illustrations, review questions, and monthly editions for young readers.",
+              '155-piece mechanic set with screwdriver and spanner, ideal for children to learn engineering through building 14 models and fostering creativity and confidence with real tools.'
             ]
         },
         8: { // Set 9
             titles: [
               '',
-              'Tower Ball Drop Spinning Toy',
+              'Zephyr Metal Mechanics',
               'Giggles Wooden Ramp Racer',
-              "Sawan Toddler's Board Book",
-              'Talking Flash Cards Toy'
+              "Shakespeares Greatest Stories",
+              'Wooden Self-Made Sliding Car Toy'
             ],
             descriptions: [
               <ul>
-                <li>Tower Ball Drop Spinning Toy</li>
+                <li>Zephyr Metal Mechanics</li>
                 <li>Giggles Wooden Ramp Racer</li>
-                <li>Sawan Toddler's Board Book</li>
-                <li>Talking Flash Cards Toy</li>
+                <li>Shakespeares Greatest Stories</li>
+                <li>Wooden Self-Made Sliding Car Toy</li>
               </ul>,
-              "Baby's First Blocks: Enhances motor skills and early learning through color sorting and shape matching activities, fostering coordination and cognitive development.",
+              "Inspire creativity and develop motor skills with blocks designed for small hands, teaching construction techniques and fostering imagination through colorful shapes and sizes.",
               'Wooden Ramp Racer set sparks racing excitement as cars flip down ramps, delighting children with each thrilling roll.',
-              'Vibrant board books with engaging images for fast absorption of information, ideal for teaching and gifting to pre-preschoolers and toddlers. (Any one book)',
-              'Interactive Talking Flash Card device with 224 double-sided cards covering various categories, fostering independent learning and speech therapy for kids.'
+              "Explore Shakespeare's Greatest Stories with captivating retellings, illustrations, review questions, and monthly editions for young readers.",
+              'Encourage toddler development with a high-quality wooden ramp race track toy, promoting sensory stimulation, STEM learning, and easy assembly for indoor and outdoor play.'
             ]
         },
         9: { // Set 10
             titles: [
               '',
-              'Multi Building Blocks',
-              'Wooden Magnetic Alphabet Number Train',
-              "Sawan Toddler's Board Book",
-              'Learning Pillow Book'
+              'World Box Activity Kit',
+              'World Country Flags Flash Cards',
+              "Shakespeares Greatest Stories",
+              'SuperHero Hydraulic Shooter'
             ],
             descriptions: [
               <ul>
-                <li>Multi Building Blocks</li>
-                <li>Wooden Magnetic Alphabet Number Train</li>
-                <li>Sawan Toddler's Board Book</li>
-                <li>Learning Pillow Book</li>
+                <li>World Box Activity Kit</li>
+                <li>World Country Flags Flash Cards</li>
+                <li>Shakespeares Greatest Stories</li>
+                <li>SuperHero Hydraulic Shooter</li>
               </ul>,
-              "Little building blocks inspire creativity and imagination, promoting open-ended play and enhancing children's thinking abilities and creativity.",
-              'Wooden number train set promotes counting, imagination, and cognitive skills with durable, eco-friendly construction and easy assembly.',
-              'Vibrant board books with engaging images for fast absorption of information, ideal for teaching and gifting to pre-preschoolers and toddlers. (Any one book)',
-              'Fun and educational personalized learning pillow for kids, featuring alphabets, numbers, and various subjects in multiple languages, ideal for early learning and room decor.'
+              "An interactive global learning kit with a play passport, world map, travel scrapbook, and collectible cards, promoting geography, creativity, and social skills in kids.",
+              "Premium laminated 300 GSM flashcards featuring world countries' flags and currency information, ideal for learning geography and gifting.",
+              "Explore Shakespeare's Greatest Stories with captivating retellings, illustrations, review questions, and monthly editions for young readers.",
+              'Build your own hydraulic superhero hand shooter for ages 7-12, featuring a real working mechanism and educational STEM learning through play.'
             ]
         },
         10: { // Set 11
             titles: [
               '',
-              'Montessori Slide Puzzle',
-              'Music Jam Play Mat Toy',
-              "Sawan Toddler's Board Book",
-              'Chocozone Wooden Learning Puzzle'
+              'Magnetic Dart Board Game',
+              'Smartivity Hydraulic STEM DIY Fun Toy',
+              "Shakespeares Greatest Stories",
+              'Never Ending English Board Word Game'
             ],
             descriptions: [
               <ul>
-                <li>Montessori Slide Puzzle</li>
-                <li>Music Jam Play Mat Toy</li>
-                <li>Sawan Toddler's Board Book</li>
-                <li>Chocozone Wooden Learning Puzzle</li>
+                <li>Magnetic Dart Board Game</li>
+                <li>Smartivity Hydraulic STEM DIY Fun Toy</li>
+                <li>Shakespeares Greatest Stories</li>
+                <li>Never Ending English Board Word Game</li>
               </ul>,
-              'Colorful and safe shape sorting toy box promotes fine motor skills and hand-eye coordination in children.',
-              'Musical 2-in-1 Piano and Drum Play Mat Toy offers interactive musical exploration with 8 instrument sounds, 24 key buttons, record/playback feature, and built-in melodies for creative play and skill development.',
-              'Vibrant board books with engaging images for fast absorption of information, ideal for teaching and gifting to pre-preschoolers and toddlers. (Any one book)',
-              'Alphabet and Number Puzzles: Educational tools fostering fine motor skills, creativity, and curiosity in young learners.'
+              'Safe and easy-to-play magnetic dartboard game for all ages, perfect for indoor and outdoor fun and as an ideal gift option.',
+              'Ideal screen-free gift for kids 6-12 years, promoting STEM learning through creative, mechanical play with 201 parts and multiple builds.',
+              "Explore Shakespeare's Greatest Stories with captivating retellings, illustrations, review questions, and monthly editions for young readers.",
+              'New board game since November 2021: Educational and fun English vocabulary and spelling challenge for up to 6 players across four difficulty levels.'
             ]
         },
         11: { // Set 12
             titles: [
               '',
-              'Dinosaur Wooden Abacus',
-              'Babyhug Mega Brix Stack & Fix Set',
-              "Sawan Toddler's Board Book",
-              'Babyhug Soft Stacking Cube'
+              'Funskool Othello',
+              'Zephyr Mechanix-4',
+              "Shakespeares Greatest Stories",
+              'Skillmatics Multiplication Flash Cards'
             ],
             descriptions: [
               <ul>
-                <li>Dinosaur Wooden Abacus</li>
-                <li>Babyhug Mega Brix Stack & Fix Set</li>
-                <li>Sawan Toddler's Board Book</li>
-                <li>Babyhug Soft Stacking Cube</li>
+                <li>Funskool Othello</li>
+                <li>Zephyr Mechanix-4</li>
+                <li>Shakespeares Greatest Stories</li>
+                <li>Skillmatics Multiplication Flash Cards</li>
               </ul>,
-              'Classic wooden abacus toy, fostering early math skills, fine motor development, and educational play with colorful, non-toxic beads.',
-              'Colorful building blocks set fosters imagination and teaches gestalt psychology concepts through creative structure formation.',
-             'Vibrant board books with engaging images for fast absorption of information, ideal for teaching and gifting to pre-preschoolers and toddlers. (Any one book)',
-              'Adorable, non-toxic soft toy for endless fun-filled play and learning, crafted with care from the finest materials.'
+              "Master strategy in this classic game that's easy to learn yet challenging for all ages, ensuring fun for the whole family.",
+              'Comprehensive 263-piece MechaniX 4 kit enables building 20 models and encourages creativity with high-quality steel parts and versatile design.',
+             "Explore Shakespeare's Greatest Stories with captivating retellings, illustrations, review questions, and monthly editions for young readers.",
+              'Skillmatics Multiplication Flash Card Set makes learning math fun with 169 double-sided cards, puzzles, tip & trick cards, and a dry-erase marker, ideal for 2nd to 6th graders.'
             ]
         },
     }

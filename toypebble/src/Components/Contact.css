@@ -1,0 +1,8 @@
+/* src/Contact.css or any appropriate CSS file */
+.modal-dialog-centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100% - 1.75rem); /* Adjust if needed */
+  }
+  

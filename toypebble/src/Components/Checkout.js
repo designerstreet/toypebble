@@ -1,7 +1,6 @@
-import { Grid, Card, CardContent, Typography, Button, Container } from "@mui/material";
+import { Grid, Card, CardContent, Typography, Button } from "@mui/material";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
-import MyNavbar from "./Navbar";
 
 function loadScript(src) {
   return new Promise((resolve) => {
@@ -31,9 +30,10 @@ function Checkout() {
   const searchParams = new URLSearchParams(location.search);
   const ageGroup = searchParams.get('ageGroup');
   const plan = searchParams.get('plan');
-
   
   const [amount, setAmount] = useState(0);
+  const [gst, setGst] = useState(0);
+  const [totalAmount, setTotalAmount] = useState(0);
   const storedUser = JSON.parse(localStorage.getItem('user')) || {};
   const email = storedUser.email || '';
   const name = storedUser.parentname || '';
@@ -50,7 +50,14 @@ function Checkout() {
           },
           body: JSON.stringify({ planType })
         }).then((t) => t.json());
-        setAmount(data.amount);
+
+        const fetchedAmount = data.amount / 100; // Assuming the backend returns amount in paise
+        const gstAmount = fetchedAmount * 0.18;
+        const total = fetchedAmount + gstAmount;
+
+        setAmount(fetchedAmount);
+        setGst(gstAmount);
+        setTotalAmount(total);
       }
     }
     fetchAmount();
@@ -89,10 +96,6 @@ function Checkout() {
       name: 'Toypebble',
       description: 'Thank you for your purchase.',
       handler: async function (response) {
-        // alert(response.razorpay_payment_id);
-        // alert(response.razorpay_order_id);
-        // alert(response.razorpay_signature);
-
         await createOrder(response.razorpay_order_id, plan, ageGroup);
         await sendOrderEmail(response.razorpay_order_id); // Call to send email after creating order
 
@@ -187,7 +190,7 @@ function Checkout() {
                 </Grid>
             </Grid>
       {/* <Container maxWidth="md" style={{ marginTop: '50px', backgroundColor: '#FFF8BD' }}> */}
-      <Grid item container md={12} xs={12} justifyContent="center" className="mt-5">
+      <Grid item container md={12} xs={12} justifyContent="center" className="mt-5 mb-5">
         <Card container style={{backgroundColor: 'rgb(182 196 245)'}}>
           <CardContent>
             <Typography variant="h4" gutterBottom className="text-center" style={{fontWeight: '700'}}>
@@ -196,16 +199,24 @@ function Checkout() {
             <hr></hr>
             <Grid container spacing={3}>
               <Grid item xs={12} md={6}>
-                <Typography variant="h6" style={{fontWeight: '500'}}>Subscription Plan:</Typography>
-                <Typography variant="body1">{plan}</Typography>
+                <Typography variant="h4" style={{fontWeight: '500'}}>Subscription Plan:</Typography>
+                <Typography variant="h6">{plan}</Typography>
               </Grid>
               <Grid item xs={12} md={6}>
-                <Typography variant="h6" style={{fontWeight: '500'}}>Age Group:</Typography>
-                <Typography variant="body1">{ageGroup}</Typography>
+                <Typography variant="h4" style={{fontWeight: '500'}}>Age Group:</Typography>
+                <Typography variant="h6">{ageGroup}</Typography>
               </Grid>
               <Grid item xs={12} md={6}>
-                <Typography variant="h6" style={{fontWeight: '500'}}>Amount:</Typography>
-                <Typography variant="body1">₹{amount / 100}</Typography>
+                <Typography variant="h4" style={{fontWeight: '500'}}>Amount:</Typography>
+                <Typography variant="h6">₹{amount}</Typography>
+              </Grid>
+              <Grid item xs={12} md={6}>
+                <Typography variant="h4" style={{fontWeight: '500'}}>GST (18%):</Typography>
+                <Typography variant="h6">₹{gst.toFixed(2)}</Typography>
+              </Grid>
+              <Grid item xs={12} md={6}>
+                <Typography variant="h4" style={{fontWeight: '500'}}>Total Amount:</Typography>
+                <Typography variant="h6">₹{totalAmount.toFixed(2)}</Typography>
               </Grid>
             </Grid>
             <Grid container justifyContent="center" style={{ marginTop: '20px' }}>
